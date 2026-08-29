@@ -2,7 +2,7 @@
 
 **Planeador de rutas multimodales para MiBici que garantiza que ningún tramo en bicicleta exceda la ventana gratuita de 30 minutos.**
 
-Guadalajara tiene 368 estaciones de MiBici y un sistema tarifario donde cada viaje es gratuito durante los primeros 30 minutos. Ningún planeador existente —ni la app oficial, ni Google Maps— toma esa regla en cuenta: te dan una ruta directa de 45 minutos y te cobran el excedente. MiRuta parte esa ruta en tramos, insertando paradas en estaciones intermedias donde re-anclas y vuelves a tomar bici, de modo que el contador se reinicia y el viaje completo sigue costando cero.
+Guadalajara tiene 451 estaciones activas de MiBici y un sistema tarifario donde cada viaje es gratuito durante los primeros 30 minutos. Ningún planeador existente —ni la app oficial, ni Google Maps— toma esa regla en cuenta: te dan una ruta directa de 45 minutos y te cobran el excedente. MiRuta parte esa ruta en tramos, insertando paradas en estaciones intermedias donde re-anclas y vuelves a tomar bici, de modo que el contador se reinicia y el viaje completo sigue costando cero.
 
 Además, MiRuta trata **caminar como parte de la ruta**: el trayecto de tu punto de partida a la primera estación y de la última estación a tu destino se contabilizan en la distancia y el tiempo totales, porque son parte real del viaje.
 
@@ -96,21 +96,50 @@ id,name,latitude,longitude,dpcapacity
 | `latitude`, `longitude` | Nodos del grafo y marcadores del mapa |
 | `dpcapacity` | Número de anclajes. Se usa solo como señal informativa ("estación grande, más probable que haya lugar") |
 
-**Preprocesamiento:** el CSV se convierte una vez a `data/estaciones.json`, se normalizan los nombres (espacios dobles, acentos inconsistentes) y se extrae el código de zona a un campo propio. El archivo resultante ronda los 40 KB y se carga completo en el cliente.
+**Particularidades reales del archivo**, verificadas al procesarlo (`scripts/01-normalizar-estaciones.ts`). Ninguna es evidente al abrirlo, y cada una rompe un parser ingenuo:
 
-### 4.2 Decisión: sin datos en tiempo real
+| Hallazgo | Consecuencia |
+|---|---|
+| Codificación **Windows-1252**, no UTF-8 | Leerlo como UTF-8 corrompe todos los acentos: "Niños héroes" queda ilegible |
+| Al menos una fila trae comas dentro del nombre, entrecomilladas: `334,"(GDL-261)C. Jarauta, Javier Mina",…` | Un `split(',')` la parte mal. Hace falta un parser que respete comillas |
+| **39 estaciones tienen `dpcapacity = 0`**: son bajas del sistema | Solo 14 lo declaran en el nombre con prefijo `Ex-`/`ex(`. **La capacidad es la señal confiable; el nombre no lo es** |
+| Zonas presentes: `GDL`, `ZPN`, `TLQ` | No existe `ZAP` ni `TON`. Tlaquepaque tiene apenas 15 estaciones; Tonalá, ninguna |
+| Nombres con espacios dobles y a veces sin espacio tras el paréntesis | Requieren normalización antes de mostrarse |
+
+**Resultado:** 490 filas → **451 estaciones activas** (342 GDL, 94 ZPN, 15 TLQ), 39 descartadas. El `estaciones.json` resultante pesa 40 KB y se carga completo en el cliente.
+
+### 4.2 Cobertura real del sistema
+
+El área servida mide aproximadamente **11.5 km norte-sur por 14.2 km este-oeste**. Verificado con `scripts/04-explorar-cobertura.ts`, hay destinos conocidos del AMG que quedan **fuera** del radio de caminata:
+
+| Destino | Estación más cercana | ¿Cubierto? |
+|---|---|---|
+| Centro, Americana, Chapalita, Expo, CUCEI | < 210 m | Sí |
+| Basílica de Zapopan, Plaza Patria, Centro Magno | < 150 m | Sí |
+| Centro de Tlaquepaque | 180 m | Sí |
+| CUCEA | 978 m | Sí, al límite |
+| Parque Metropolitano | 1 612 m | **No** |
+| Zoológico de Guadalajara | 2 155 m | **No** |
+| Andares | 2 374 m | **No** |
+| Estadio Akron | 3 979 m | **No** |
+| Tonalá centro | 7 260 m | **No** |
+| Aeropuerto | 12 749 m | **No** |
+
+Esto no es un defecto de MiRuta sino del sistema que modela, pero **la interfaz debe comunicarlo con claridad**: cuando el destino cae fuera, el mensaje indica la estación más cercana y su distancia, en vez de un error genérico.
+
+### 4.3 Decisión: sin datos en tiempo real
 
 MiRuta **no consulta disponibilidad de bicicletas ni de anclajes**. Es una decisión deliberada, no una limitación pendiente de resolver:
 
 - Elimina la dependencia más frágil del sistema. Una demo no se cae porque un feed externo esté lento.
 - El caso de uso es *planeación*, generalmente minutos u horas antes del viaje. La disponibilidad de ese momento no predice la del momento del trayecto.
-- Con 368 estaciones y capacidades de 15–20 anclajes, la probabilidad de encontrar una estación completamente vacía o completamente llena es baja fuera de horas pico.
+- Con 451 estaciones y una capacidad mediana de 15–19 anclajes, la probabilidad de encontrar una estación completamente vacía o completamente llena es baja fuera de horas pico.
 
 **Mitigación en UI:** cada parada sugerida muestra, además, la estación alternativa más cercana. Si el usuario llega y no hay lugar, tiene un plan B inmediato sin recalcular.
 
 Si en el futuro se quisiera incorporar tiempo real, la vía es el feed GBFS que Datos Abiertos Jalisco publica para el dataset *Disponibilidad de bicicletas en estaciones de Mi Bici*. Queda documentado como extensión, no como requisito.
 
-### 4.3 Ruteo
+### 4.4 Ruteo
 
 **Servicio:** [OpenRouteService](https://openrouteservice.org/) (API gratuita con llave, ~2 000 peticiones/día).
 
@@ -133,6 +162,16 @@ Se eligió sobre OSRM público porque el servidor demo de OSRM solo expone perfi
 
 Consecuencia: no hay backend, no hay base de datos, no hay latencia de red en el camino crítico, y el consumo de la API externa es de unas pocas llamadas por ruta en lugar de miles.
 
+**Tamaño real del grafo, y qué se hizo al respecto.** La primera versión de este documento estimaba `grafo.json` en unos 200 KB. Medido, resultó ser **1.4 MB (481 KB comprimido con gzip)**: con 451 estaciones en un área de 14 × 11 km, la ventana de 27 minutos alcanza para llegar a ~5.9 km de calle, de modo que **cada estación conecta en promedio con otras 210**. El grafo es mucho más denso de lo previsto.
+
+La respuesta no es podar el grafo sino **diferir su carga**:
+
+- La app pinta el mapa y las 451 estaciones con solo `estaciones.json` (40 KB).
+- `grafo.json` se descarga en segundo plano mientras el usuario elige origen y destino, cosa que toma varios segundos de todos modos.
+- Para cuando se pulsa «planear», ya está en memoria.
+
+Podar habría degradado la calidad de las rutas de forma difícil de acotar; diferir no cuesta nada y no sacrifica optimalidad. El constructor conserva una bandera `--max-grado N` como escape si alguna vez hace falta, pero no se usa por omisión.
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  TIEMPO DE CONSTRUCCIÓN  (script Node, se corre una vez)     │
@@ -146,7 +185,7 @@ Consecuencia: no hay backend, no hay base de datos, no hay latencia de red en el
 │  ORS Matrix API (cycling-regular, por lotes)                 │
 │         │                                                    │
 │         ▼                                                    │
-│  descartar pares > VENTANA_EFECTIVA ──► grafo.json (~200 KB) │
+│  descartar pares > VENTANA_EFECTIVA ──► grafo.json (1.4 MB)  │
 └─────────────────────────────────────────────────────────────┘
                              │
                              ▼
@@ -183,33 +222,62 @@ Consecuencia: no hay backend, no hay base de datos, no hay latencia de red en el
 
 ### 5.3 Estructura de carpetas
 
+`✅` ya existe · `☐` pendiente
+
 ```
 MiRuta/
 ├── README.md
 ├── scripts/
-│   ├── 01-normalizar-estaciones.ts   # CSV → estaciones.json
-│   └── 02-construir-grafo.ts         # ORS Matrix → grafo.json
+│   ├── 01-normalizar-estaciones.ts   ✅ CSV → estaciones.json
+│   ├── 02-construir-grafo.ts         ✅ matriz de tiempos → grafo.json
+│   ├── 03-probar-motor.ts            ✅ banco de pruebas del motor
+│   └── 04-explorar-cobertura.ts      ✅ diagnóstico del área servida
 ├── data/
-│   ├── nomenclatura_2026_07.csv      # fuente original, versionada
-│   ├── estaciones.json               # generado
-│   └── grafo.json                    # generado
+│   ├── nomenclatura_2026_07.csv      ✅ fuente oficial, versionada
+│   ├── estaciones.json               ✅ generado — 451 estaciones, 40 KB
+│   └── grafo.json                    ✅ generado — 94 588 aristas, 1.4 MB
 ├── src/
 │   ├── dominio/
-│   │   ├── tipos.ts                  # Estacion, Tramo, Itinerario
-│   │   ├── constantes.ts             # ventana, velocidades, radios
-│   │   ├── dijkstra.ts               # búsqueda de camino mínimo
-│   │   └── planificador.ts           # orquesta el cálculo completo
+│   │   ├── tipos.ts                  ✅ Estacion, Tramo, Itinerario
+│   │   ├── constantes.ts             ✅ ventana, velocidades, radios
+│   │   ├── dijkstra.ts               ✅ camino mínimo con montículo binario
+│   │   └── planificador.ts           ✅ orquesta el cálculo completo
 │   ├── servicios/
-│   │   ├── ors.ts                    # cliente OpenRouteService
-│   │   └── geo.ts                    # haversine, utilidades
+│   │   ├── geo.ts                    ✅ haversine, búsquedas por radio
+│   │   └── ors.ts                    ☐ refina tramos a pie y geometrías
 │   ├── componentes/
-│   │   ├── Mapa.tsx
-│   │   ├── PanelItinerario.tsx
-│   │   ├── TarjetaTramo.tsx
-│   │   └── SelectorPuntos.tsx
-│   └── App.tsx
+│   │   ├── Mapa.tsx                  ☐
+│   │   ├── PanelItinerario.tsx       ☐
+│   │   ├── TarjetaTramo.tsx          ☐
+│   │   └── SelectorPuntos.tsx        ☐
+│   └── App.tsx                       ☐
 └── public/
 ```
+
+### 5.4 Cómo correrlo
+
+```bash
+npm install
+
+# 1. Catálogo oficial → estaciones.json
+npm run datos:estaciones
+
+# 2. Grafo. Sin llave de ORS, con estimación geodésica:
+npm run datos:grafo -- --respaldo
+#    Con llave real (copia .env.example a .env y pon ORS_API_KEY):
+npm run datos:grafo
+
+# 3. Verificar el motor. Sale con código != 0 si algo falla.
+npm run probar:motor
+
+# 4. Diagnóstico de cobertura del sistema
+npx tsx scripts/04-explorar-cobertura.ts
+
+# 5. Interfaz (bloque 4 en adelante)
+npm run dev
+```
+
+**El modo respaldo es la decisión que desbloqueó el proyecto.** Permite construir y validar el motor completo sin depender de una llave de API ni de la red. Los tiempos son estimaciones geodésicas —peores que los reales— pero la topología del grafo es la misma, así que todo el código posterior se desarrolla contra datos de forma correcta. Cuando llega la llave, un solo comando lo sustituye sin tocar una línea de la aplicación.
 
 ---
 
@@ -303,31 +371,32 @@ type Itinerario = {
 
 ### 6.5 Ejemplo trabajado
 
-Trayecto de 9.2 km, aproximadamente Zapopan Centro → Chapalita:
+Salida real del motor (`npm run probar:motor`), Catedral de Guadalajara → Basílica de Zapopan:
 
 ```
-🚶 Caminata      Punto de partida → (ZAP-014) Av. Vallarta / Av. Patria
-                 480 m · 6 min
+🚶 Caminata      Punto de partida → GDL-033 Av. Hidalgo / C. Pedro Loza
+                 100 m · 2 min
 
-🚲 Tramo 1       (ZAP-014) → (ZAP-039) Av. Vallarta / Av. Rafael Sanzio
-                 5.1 km · 23 min          ✓ margen de 7 min
+🚲 Tramo 1       GDL-033 → GDL-292 C. Gral. Coronado / C. Miraflores
+                 3.2 km · 15 min          ✓ margen de 15.1 min
 
 ⚓ Parada        Ancla aquí y toma otra bici. Esto reinicia tu ventana gratuita.
-                 Alternativa a 220 m: (ZAP-041) Av. Guadalupe / Av. Patria
 
-🚲 Tramo 2       (ZAP-039) → (GDL-102) Av. Chapalita / Av. Guadalupe
-                 3.2 km · 15 min          ✓ margen de 15 min
+🚲 Tramo 2       GDL-292 → ZPN-013
+                 5.7 km · 26 min          ✓ margen de 3.7 min
 
-🚶 Caminata      (GDL-102) → Destino
-                 340 m · 4 min
+🚶 Caminata      ZPN-013 → Destino
+                 100 m · 1 min
 
 ─────────────────────────────────────────────────────
-TOTAL   9.2 km · 50 min   ·   $0 en cargos extra
-        🚲 8.3 km / 38 min      🚶 0.9 km / 10 min
+TOTAL   9.1 km · 46 min
+        🚲 8.9 km / 41 min      🚶 0.2 km / 2 min
         1 parada intermedia
 ```
 
-Sin MiRuta, ese mismo trayecto directo tomaría ~42 minutos de pedaleo continuo: 12 minutos por encima de la ventana gratuita, con el cargo correspondiente.
+Sin la parada, ese trayecto serían ~41 minutos de pedaleo continuo: **11 minutos por encima de la ventana gratuita**, con el cargo correspondiente.
+
+> Los tiempos de este ejemplo provienen del grafo en **modo respaldo** (estimación geodésica). Se regeneran con datos reales de OpenRouteService en cuanto haya llave de API.
 
 ---
 
@@ -391,17 +460,20 @@ Lista explícita, para protegerla de la tentación a mitad del hackathon:
 
 | Bloque | Horas | Entregable | Estado |
 |---|---|---|---|
-| **0. Preparación** | 0–2 | Repo, Vite + React + TS + Tailwind, llave de ORS obtenida y probada con curl | ☐ |
-| **1. Datos** | 2–5 | `estaciones.json` generado y validado. Las 368 estaciones se pintan en un mapa Leaflet | ☐ |
-| **2. Grafo** | 5–10 | `02-construir-grafo.ts` corrido. `grafo.json` versionado. Verificar a mano 3 pares conocidos | ☐ |
-| **3. Motor** | 10–18 | Dijkstra + planificador, con pruebas sobre 5 pares origen–destino fijos. **Sin UI todavía** | ☐ |
+| **0. Preparación** | 0–2 | Repo git, Vite + React + TS + Tailwind, dependencias instaladas | ✅ |
+| **1. Datos** | 2–5 | `estaciones.json` generado y validado: 451 estaciones activas | ✅ |
+| **2. Grafo** | 5–10 | `grafo.json` con 94 588 aristas, todas dentro de la ventana | ✅ modo respaldo |
+| **3. Motor** | 10–18 | Dijkstra + planificador + banco de pruebas | ✅ |
+| **3b. Grafo real** | — | Regenerar con OpenRouteService | ⏳ **falta llave de API** |
 | **4. Mapa** | 18–26 | Selección de origen/destino, dibujo de la ruta con tramos diferenciados | ☐ |
 | **5. Panel** | 26–34 | Itinerario, totales desglosados, márgenes, tarjetas de parada | ☐ |
 | **6. Pulido** | 34–40 | Estados de carga y error, responsive móvil, PWA, despliegue | ☐ |
 | **7. Demo** | 40–46 | Guion, 3 rutas de respaldo precalculadas, ensayo | ☐ |
 | **Colchón** | 46–48 | Lo que se rompa | ☐ |
 
-**Punto de control crítico:** al terminar el bloque 3 debe existir un motor que, invocado desde consola, devuelva un itinerario correcto. Si a la hora 18 eso no funciona, el proyecto se recorta al plan B de §10 en lugar de seguir hacia la UI.
+**Punto de control crítico — superado.** El bloque 3 exigía un motor que, invocado desde consola, devolviera itinerarios correctos. `npm run probar:motor` lo demuestra sobre 12 casos con nombre y 200 pares aleatorios. El producto ya existe aunque todavía no tenga interfaz.
+
+El modo respaldo permitió completar los bloques 1–3 **sin llave de OpenRouteService**. El bloque 3b solo requiere volver a correr `npm run datos:grafo`; ni el motor ni la interfaz cambian.
 
 ---
 
@@ -420,14 +492,25 @@ Lista explícita, para protegerla de la tentación a mitad del hackathon:
 
 ## 11. Cómo se sabe si funcionó
 
-**Correctitud** — sobre 20 pares origen–destino aleatorios dentro del área de servicio:
-- 100 % de los tramos de bici devueltos están bajo los 27 minutos
-- ≥ 90 % de los pares producen una ruta válida
-- El tiempo total coincide con la suma de los tramos, sin discrepancias de redondeo
+Automatizado en `npm run probar:motor`, que devuelve código de salida distinto de cero si algo falla.
+
+**Correctitud** — medido sobre 200 pares aleatorios reproducibles (semilla fija) más 12 casos con nombre:
+
+| Criterio | Meta | Medido |
+|---|---|---|
+| Tramos de bici bajo la ventana efectiva | 100 % | **100 %** (0 violaciones en 319 tramos) |
+| Pares que producen ruta válida | ≥ 90 % | **99.5 %** (199/200) |
+| Total = suma de tramos | exacto | **exacto** |
+| Destinos fuera de cobertura rechazados con mensaje útil | sí | **sí** |
 
 **Rendimiento**
-- Cálculo de ruta bajo 2 s en móvil de gama media
-- Carga inicial bajo 3 s en 4G
+
+| Criterio | Meta | Medido |
+|---|---|---|
+| Cálculo de ruta | < 2 000 ms | **9 ms promedio, 27 ms peor caso** |
+| Carga inicial en 4G | < 3 s | pendiente (ver carga diferida en §5.1) |
+
+**Utilidad del producto** — la métrica que justifica que MiRuta exista: **el 54 % de los trayectos requiere al menos una parada** (89 de 199 una parada, 18 dos paradas). Sin MiRuta, ese 54 % de usuarios paga cargos que podría evitar.
 
 **Demo**
 - Alguien que nunca ha usado la app entiende, sin explicación, por qué hay una parada intermedia
