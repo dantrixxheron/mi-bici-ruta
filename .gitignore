@@ -1,0 +1,17 @@
+node_modules/
+dist/
+dist-ssr/
+.env
+.env.local
+*.local
+
+# Avance parcial del constructor de grafo (reanudable, no versionar)
+data/.cache-matriz/
+
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.log
+npm-debug.log*

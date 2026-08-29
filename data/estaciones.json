@@ -1,0 +1,4067 @@
+{
+  "generadoEn": "2026-08-29T19:17:15.033Z",
+  "fuente": "nomenclatura_2026_07.csv",
+  "total": 451,
+  "descartadas": 39,
+  "estaciones": [
+    {
+      "id": 2,
+      "nombre": "C. Epigmenio Glez./ Av. 16 de Sept.",
+      "codigo": "GDL-001",
+      "zona": "GDL",
+      "lat": 20.666378,
+      "lon": -103.34882,
+      "anclajes": 15
+    },
+    {
+      "id": 3,
+      "nombre": "C. Colonias / Av. Niños héroes",
+      "codigo": "GDL-002",
+      "zona": "GDL",
+      "lat": 20.667228,
+      "lon": -103.366,
+      "anclajes": 15
+    },
+    {
+      "id": 4,
+      "nombre": "C. Vidrio / Av. Chapultepec",
+      "codigo": "GDL-003",
+      "zona": "GDL",
+      "lat": 20.66769,
+      "lon": -103.368252,
+      "anclajes": 19
+    },
+    {
+      "id": 5,
+      "nombre": "C. Ghilardi /C. Miraflores",
+      "codigo": "GDL-004",
+      "zona": "GDL",
+      "lat": 20.6918466,
+      "lon": -103.3625487,
+      "anclajes": 19
+    },
+    {
+      "id": 6,
+      "nombre": "C. San Diego /Calzada Independencia",
+      "codigo": "GDL-005",
+      "zona": "GDL",
+      "lat": 20.6811575,
+      "lon": -103.339363,
+      "anclajes": 11
+    },
+    {
+      "id": 8,
+      "nombre": "C. Venustiano Carranza /C. Reforma",
+      "codigo": "GDL-006",
+      "zona": "GDL",
+      "lat": 20.680717,
+      "lon": -103.344415,
+      "anclajes": 11
+    },
+    {
+      "id": 9,
+      "nombre": "C. Epigmenio Glez./Av. Cristobal C.",
+      "codigo": "GDL-007",
+      "zona": "GDL",
+      "lat": 20.666771,
+      "lon": -103.350562,
+      "anclajes": 15
+    },
+    {
+      "id": 10,
+      "nombre": "C. Ignacio Zaragoza / C. J. Angulo",
+      "codigo": "GDL-008",
+      "zona": "GDL",
+      "lat": 20.68195288,
+      "lon": -103.3499919,
+      "anclajes": 15
+    },
+    {
+      "id": 11,
+      "nombre": "Calz. Federalismo/ C. J. Angulo",
+      "codigo": "GDL-009",
+      "zona": "GDL",
+      "lat": 20.68207685,
+      "lon": -103.353835,
+      "anclajes": 23
+    },
+    {
+      "id": 12,
+      "nombre": "C. Cruz verde / C. Joaquin Angulo",
+      "codigo": "GDL-010",
+      "zona": "GDL",
+      "lat": 20.6818519,
+      "lon": -103.3573381,
+      "anclajes": 15
+    },
+    {
+      "id": 13,
+      "nombre": "C. Garibaldi / C. Frías",
+      "codigo": "GDL-011",
+      "zona": "GDL",
+      "lat": 20.681081,
+      "lon": -103.360099,
+      "anclajes": 11
+    },
+    {
+      "id": 14,
+      "nombre": "C. Joaquín Angulo / C. Ghilardi",
+      "codigo": "GDL-012",
+      "zona": "GDL",
+      "lat": 20.6820683,
+      "lon": -103.3629218,
+      "anclajes": 11
+    },
+    {
+      "id": 16,
+      "nombre": "C. J. Angulo/C José Clemente Orozco",
+      "codigo": "GDL-014",
+      "zona": "GDL",
+      "lat": 20.6821447,
+      "lon": -103.3659297,
+      "anclajes": 19
+    },
+    {
+      "id": 17,
+      "nombre": "C. Herrera y Cairo /C. Pedro Buzeta",
+      "codigo": "GDL-015",
+      "zona": "GDL",
+      "lat": 20.683191,
+      "lon": -103.369349,
+      "anclajes": 15
+    },
+    {
+      "id": 18,
+      "nombre": "C. Bernardo de Balbuena/C J. Angulo",
+      "codigo": "GDL-016",
+      "zona": "GDL",
+      "lat": 20.6824637,
+      "lon": -103.3726232,
+      "anclajes": 15
+    },
+    {
+      "id": 19,
+      "nombre": "Av. México /C. Bernardo de Balbuena",
+      "codigo": "GDL-017",
+      "zona": "GDL",
+      "lat": 20.67906136,
+      "lon": -103.3729066,
+      "anclajes": 15
+    },
+    {
+      "id": 20,
+      "nombre": "Av. México / C. Manuel M. Diéguez",
+      "codigo": "GDL-018",
+      "zona": "GDL",
+      "lat": 20.679296,
+      "lon": -103.370658,
+      "anclajes": 11
+    },
+    {
+      "id": 21,
+      "nombre": "C. Juan Manuel / C. Andrés Terán",
+      "codigo": "GDL-019",
+      "zona": "GDL",
+      "lat": 20.67881367,
+      "lon": -103.3680584,
+      "anclajes": 23
+    },
+    {
+      "id": 254,
+      "nombre": "C. General Coronado / C.Juan Manuel",
+      "codigo": "GDL-020",
+      "zona": "GDL",
+      "lat": 20.67848,
+      "lon": -103.365103,
+      "anclajes": 15
+    },
+    {
+      "id": 23,
+      "nombre": "C. Nicolás Romero / C. Reforma",
+      "codigo": "GDL-021",
+      "zona": "GDL",
+      "lat": 20.67966,
+      "lon": -103.362224,
+      "anclajes": 15
+    },
+    {
+      "id": 24,
+      "nombre": "C. San Felipe /C Enrique D. de León",
+      "codigo": "GDL-022",
+      "zona": "GDL",
+      "lat": 20.679389,
+      "lon": -103.35913,
+      "anclajes": 15
+    },
+    {
+      "id": 25,
+      "nombre": "C. Jesús / C. San Felipe",
+      "codigo": "GDL-023",
+      "zona": "GDL",
+      "lat": 20.679309,
+      "lon": -103.356281,
+      "anclajes": 15
+    },
+    {
+      "id": 26,
+      "nombre": "Av. Federalismo / C. Juan Manuel",
+      "codigo": "GDL-024",
+      "zona": "GDL",
+      "lat": 20.678777,
+      "lon": -103.354035,
+      "anclajes": 15
+    },
+    {
+      "id": 27,
+      "nombre": "C. Reforma / C. González Ortega",
+      "codigo": "GDL-025",
+      "zona": "GDL",
+      "lat": 20.680227,
+      "lon": -103.350146,
+      "anclajes": 15
+    },
+    {
+      "id": 28,
+      "nombre": "C. Pedro Loza / C. Reforma",
+      "codigo": "GDL-026",
+      "zona": "GDL",
+      "lat": 20.680478,
+      "lon": -103.348377,
+      "anclajes": 15
+    },
+    {
+      "id": 29,
+      "nombre": "C. Belén / C. San Felipe",
+      "codigo": "GDL-027",
+      "zona": "GDL",
+      "lat": 20.679861,
+      "lon": -103.345198,
+      "anclajes": 15
+    },
+    {
+      "id": 30,
+      "nombre": "C. Gregorio Dávila /C. Manuel Acuña",
+      "codigo": "GDL-028",
+      "zona": "GDL",
+      "lat": 20.6840145,
+      "lon": -103.3612673,
+      "anclajes": 15
+    },
+    {
+      "id": 31,
+      "nombre": "Calz. Indep. /C. Juan Manuel",
+      "codigo": "GDL-029",
+      "zona": "GDL",
+      "lat": 20.679899,
+      "lon": -103.339438,
+      "anclajes": 19
+    },
+    {
+      "id": 32,
+      "nombre": "C. Pedro Moreno/ C. Progreso",
+      "codigo": "GDL-030",
+      "zona": "GDL",
+      "lat": 20.675461,
+      "lon": -103.367501,
+      "anclajes": 19
+    },
+    {
+      "id": 33,
+      "nombre": "C. Hospital / C. Andrés Terán",
+      "codigo": "GDL-031",
+      "zona": "GDL",
+      "lat": 20.685652,
+      "lon": -103.368215,
+      "anclajes": 11
+    },
+    {
+      "id": 34,
+      "nombre": "C. Degollado / Av. Miguel Hidalgo",
+      "codigo": "GDL-032",
+      "zona": "GDL",
+      "lat": 20.67722437,
+      "lon": -103.3450061,
+      "anclajes": 15
+    },
+    {
+      "id": 35,
+      "nombre": "Av. Hidalgo / C. Pedro Loza",
+      "codigo": "GDL-033",
+      "zona": "GDL",
+      "lat": 20.677419,
+      "lon": -103.347983,
+      "anclajes": 15
+    },
+    {
+      "id": 36,
+      "nombre": "C. Morelos / C. Donato Guerra",
+      "codigo": "GDL-034",
+      "zona": "GDL",
+      "lat": 20.676461,
+      "lon": -103.350244,
+      "anclajes": 15
+    },
+    {
+      "id": 37,
+      "nombre": "C. Mezquitán / Av. Hidalgo",
+      "codigo": "GDL-035",
+      "zona": "GDL",
+      "lat": 20.677315,
+      "lon": -103.3534145,
+      "anclajes": 11
+    },
+    {
+      "id": 38,
+      "nombre": "C. Marcos Castellanos/ C. Morelos",
+      "codigo": "GDL-036",
+      "zona": "GDL",
+      "lat": 20.676078,
+      "lon": -103.356458,
+      "anclajes": 23
+    },
+    {
+      "id": 39,
+      "nombre": "C.Juan N. Cumplido /C. Independenci",
+      "codigo": "GDL-037",
+      "zona": "GDL",
+      "lat": 20.678034,
+      "lon": -103.358466,
+      "anclajes": 15
+    },
+    {
+      "id": 40,
+      "nombre": "C. Nicolás Romero / Av. Hidalgo",
+      "codigo": "GDL-038",
+      "zona": "GDL",
+      "lat": 20.676656,
+      "lon": -103.362331,
+      "anclajes": 15
+    },
+    {
+      "id": 41,
+      "nombre": "C. General Coronado / Av. Hidalgo",
+      "codigo": "GDL-039",
+      "zona": "GDL",
+      "lat": 20.677108,
+      "lon": -103.365088,
+      "anclajes": 15
+    },
+    {
+      "id": 42,
+      "nombre": "C. Morelos / C. Progreso",
+      "codigo": "GDL-040",
+      "zona": "GDL",
+      "lat": 20.676067,
+      "lon": -103.367049,
+      "anclajes": 19
+    },
+    {
+      "id": 43,
+      "nombre": "C. Manuel M. Diéguez / Av. Hidalgo",
+      "codigo": "GDL-041",
+      "zona": "GDL",
+      "lat": 20.67671,
+      "lon": -103.37066,
+      "anclajes": 15
+    },
+    {
+      "id": 44,
+      "nombre": "C. Bernardo de Balbuena /Av Hidalgo",
+      "codigo": "GDL-042",
+      "zona": "GDL",
+      "lat": 20.676628,
+      "lon": -103.372687,
+      "anclajes": 15
+    },
+    {
+      "id": 45,
+      "nombre": "C. Simón Bolivar / C. López Cotilla",
+      "codigo": "GDL-043",
+      "zona": "GDL",
+      "lat": 20.673756,
+      "lon": -103.372613,
+      "anclajes": 11
+    },
+    {
+      "id": 46,
+      "nombre": "C. Gral. San Martín /Av. Vallarta",
+      "codigo": "GDL-044",
+      "zona": "GDL",
+      "lat": 20.674636,
+      "lon": -103.371639,
+      "anclajes": 19
+    },
+    {
+      "id": 47,
+      "nombre": "C. Pedro Moreno / C. Marsella",
+      "codigo": "GDL-045",
+      "zona": "GDL",
+      "lat": 20.675444,
+      "lon": -103.370147,
+      "anclajes": 19
+    },
+    {
+      "id": 48,
+      "nombre": "C. Emerson / Av. Vallarta",
+      "codigo": "GDL-046",
+      "zona": "GDL",
+      "lat": 20.675014,
+      "lon": -103.365025,
+      "anclajes": 11
+    },
+    {
+      "id": 49,
+      "nombre": "C. Robles Gil / Av. Vallarta",
+      "codigo": "GDL-047",
+      "zona": "GDL",
+      "lat": 20.674931,
+      "lon": -103.362351,
+      "anclajes": 15
+    },
+    {
+      "id": 50,
+      "nombre": "C. Constancio Hernández/ Av. Juaréz",
+      "codigo": "GDL-048",
+      "zona": "GDL",
+      "lat": 20.674721,
+      "lon": -103.358548,
+      "anclajes": 23
+    },
+    {
+      "id": 51,
+      "nombre": "Lopez Cotilla / Penitenciaría",
+      "codigo": "GDL-049",
+      "zona": "GDL",
+      "lat": 20.67413973,
+      "lon": -103.3555351,
+      "anclajes": 39
+    },
+    {
+      "id": 52,
+      "nombre": "C.Pedro Moreno /Federalismo",
+      "codigo": "GDL-050",
+      "zona": "GDL",
+      "lat": 20.675746,
+      "lon": -103.354579,
+      "anclajes": 23
+    },
+    {
+      "id": 53,
+      "nombre": "C. 8 de Julio / Av. Juárez",
+      "codigo": "GDL-051",
+      "zona": "GDL",
+      "lat": 20.674559,
+      "lon": -103.352663,
+      "anclajes": 15
+    },
+    {
+      "id": 54,
+      "nombre": "Av. Juarez /16 de Septiembre",
+      "codigo": "GDL-052",
+      "zona": "GDL",
+      "lat": 20.675244,
+      "lon": -103.347889,
+      "anclajes": 23
+    },
+    {
+      "id": 55,
+      "nombre": "C. Maestranza / Av. Juárez",
+      "codigo": "GDL-053",
+      "zona": "GDL",
+      "lat": 20.675401,
+      "lon": -103.345665,
+      "anclajes": 15
+    },
+    {
+      "id": 56,
+      "nombre": "Av. Juárez / Calz. Independencia",
+      "codigo": "GDL-054",
+      "zona": "GDL",
+      "lat": 20.675421,
+      "lon": -103.342049,
+      "anclajes": 27
+    },
+    {
+      "id": 57,
+      "nombre": "C. Degollado /C.Prisciliano Sánchez",
+      "codigo": "GDL-055",
+      "zona": "GDL",
+      "lat": 20.672696,
+      "lon": -103.345366,
+      "anclajes": 15
+    },
+    {
+      "id": 58,
+      "nombre": "Av. 16 de Sept. / C. Miguel Blanco",
+      "codigo": "GDL-056",
+      "zona": "GDL",
+      "lat": 20.671971,
+      "lon": -103.347422,
+      "anclajes": 19
+    },
+    {
+      "id": 59,
+      "nombre": "C. Ocampo / C. Prisciliano Sánchez",
+      "codigo": "GDL-057",
+      "zona": "GDL",
+      "lat": 20.67270672,
+      "lon": -103.3496159,
+      "anclajes": 11
+    },
+    {
+      "id": 60,
+      "nombre": "C. Pavo / C. Prisciliano Sánchez",
+      "codigo": "GDL-058",
+      "zona": "GDL",
+      "lat": 20.672641,
+      "lon": -103.353542,
+      "anclajes": 11
+    },
+    {
+      "id": 61,
+      "nombre": "C. Miguel Blanco / C. Penitenciaria",
+      "codigo": "GDL-059",
+      "zona": "GDL",
+      "lat": 20.672231,
+      "lon": -103.355508,
+      "anclajes": 15
+    },
+    {
+      "id": 62,
+      "nombre": "C. Madero/ C. Camarena",
+      "codigo": "GDL-060",
+      "zona": "GDL",
+      "lat": 20.6734,
+      "lon": -103.357684,
+      "anclajes": 23
+    },
+    {
+      "id": 63,
+      "nombre": "C. Libertad / C. Argentina",
+      "codigo": "GDL-061",
+      "zona": "GDL",
+      "lat": 20.671778,
+      "lon": -103.361274,
+      "anclajes": 19
+    },
+    {
+      "id": 64,
+      "nombre": "C. Libertad / C. Moscú",
+      "codigo": "GDL-062",
+      "zona": "GDL",
+      "lat": 20.673072,
+      "lon": -103.365055,
+      "anclajes": 15
+    },
+    {
+      "id": 65,
+      "nombre": "C. Colonias / C. López Cotilla",
+      "codigo": "GDL-063",
+      "zona": "GDL",
+      "lat": 20.674132,
+      "lon": -103.366139,
+      "anclajes": 27
+    },
+    {
+      "id": 66,
+      "nombre": "C. Marsella / C. López Cotilla",
+      "codigo": "GDL-064",
+      "zona": "GDL",
+      "lat": 20.673321,
+      "lon": -103.370571,
+      "anclajes": 19
+    },
+    {
+      "id": 67,
+      "nombre": "C. Simón Bolivar / Av. La Paz",
+      "codigo": "GDL-065",
+      "zona": "GDL",
+      "lat": 20.6722064,
+      "lon": -103.372588,
+      "anclajes": 19
+    },
+    {
+      "id": 68,
+      "nombre": "C Lerdo de Tejada/C Gral. Sn Martín",
+      "codigo": "GDL-066",
+      "zona": "GDL",
+      "lat": 20.671364,
+      "lon": -103.371786,
+      "anclajes": 15
+    },
+    {
+      "id": 69,
+      "nombre": "Calzada Federalismo / C. Vidrio",
+      "codigo": "GDL-067",
+      "zona": "GDL",
+      "lat": 20.6668825,
+      "lon": -103.3555917,
+      "anclajes": 19
+    },
+    {
+      "id": 70,
+      "nombre": "C. Guadalupe Zuno / Av. Chapultepec",
+      "codigo": "GDL-068",
+      "zona": "GDL",
+      "lat": 20.670512,
+      "lon": -103.368306,
+      "anclajes": 19
+    },
+    {
+      "id": 71,
+      "nombre": "C. Colonias / C. Guadalupe Zuno",
+      "codigo": "GDL-069",
+      "zona": "GDL",
+      "lat": 20.670468,
+      "lon": -103.366071,
+      "anclajes": 15
+    },
+    {
+      "id": 72,
+      "nombre": "Av. La Paz / C. Juan de Ojeda",
+      "codigo": "GDL-070",
+      "zona": "GDL",
+      "lat": 20.671455,
+      "lon": -103.363633,
+      "anclajes": 11
+    },
+    {
+      "id": 73,
+      "nombre": "Av. La Paz /Av.Enrique Díaz de León",
+      "codigo": "GDL-071",
+      "zona": "GDL",
+      "lat": 20.670362,
+      "lon": -103.359537,
+      "anclajes": 15
+    },
+    {
+      "id": 74,
+      "nombre": "Av. La Paz / C. Camarena",
+      "codigo": "GDL-072",
+      "zona": "GDL",
+      "lat": 20.67056,
+      "lon": -103.357589,
+      "anclajes": 15
+    },
+    {
+      "id": 75,
+      "nombre": "Av. La Paz / Av. Federalismo",
+      "codigo": "GDL-073",
+      "zona": "GDL",
+      "lat": 20.669955,
+      "lon": -103.355032,
+      "anclajes": 19
+    },
+    {
+      "id": 76,
+      "nombre": "C. Enrique González / C. Libertad",
+      "codigo": "GDL-074",
+      "zona": "GDL",
+      "lat": 20.67131,
+      "lon": -103.351651,
+      "anclajes": 11
+    },
+    {
+      "id": 77,
+      "nombre": "C. Pedro Rioseco /C. Nueva Galicia",
+      "codigo": "GDL-075",
+      "zona": "GDL",
+      "lat": 20.669628,
+      "lon": -103.348768,
+      "anclajes": 15
+    },
+    {
+      "id": 78,
+      "nombre": "Calz. Revolución / C. San Fernando",
+      "codigo": "GDL-076",
+      "zona": "GDL",
+      "lat": 20.67092294,
+      "lon": -103.3447553,
+      "anclajes": 19
+    },
+    {
+      "id": 79,
+      "nombre": "C. Argentina / C. Pedro Moreno",
+      "codigo": "GDL-077",
+      "zona": "GDL",
+      "lat": 20.675631,
+      "lon": -103.36134,
+      "anclajes": 15
+    },
+    {
+      "id": 80,
+      "nombre": "C. Comercio / C. La Paz",
+      "codigo": "GDL-078",
+      "zona": "GDL",
+      "lat": 20.66888,
+      "lon": -103.34846,
+      "anclajes": 15
+    },
+    {
+      "id": 81,
+      "nombre": "C. Donato Guerra /Av. La Paz",
+      "codigo": "GDL-079",
+      "zona": "GDL",
+      "lat": 20.6688627,
+      "lon": -103.3513022,
+      "anclajes": 11
+    },
+    {
+      "id": 82,
+      "nombre": "C. Manuel Acuña / Av. Américas",
+      "codigo": "GDL-080",
+      "zona": "GDL",
+      "lat": 20.68432,
+      "lon": -103.373252,
+      "anclajes": 19
+    },
+    {
+      "id": 83,
+      "nombre": "C. Venezuela / Av. Niños Héroes",
+      "codigo": "GDL-081",
+      "zona": "GDL",
+      "lat": 20.667352,
+      "lon": -103.363338,
+      "anclajes": 11
+    },
+    {
+      "id": 84,
+      "nombre": "C. Gpe. Montenegro/C.Nuño de Guzman",
+      "codigo": "GDL-082",
+      "zona": "GDL",
+      "lat": 20.669326,
+      "lon": -103.362535,
+      "anclajes": 15
+    },
+    {
+      "id": 85,
+      "nombre": "C. Vidrio / Av. Enrique Díaz",
+      "codigo": "GDL-083",
+      "zona": "GDL",
+      "lat": 20.667532,
+      "lon": -103.3595222,
+      "anclajes": 19
+    },
+    {
+      "id": 86,
+      "nombre": "C. Montenegro / Av. Chapultepec",
+      "codigo": "GDL-084",
+      "zona": "GDL",
+      "lat": 20.669306,
+      "lon": -103.368312,
+      "anclajes": 23
+    },
+    {
+      "id": 87,
+      "nombre": "C. Gdpe. Zuno/ Av. Unión",
+      "codigo": "GDL-085",
+      "zona": "GDL",
+      "lat": 20.670426,
+      "lon": -103.373378,
+      "anclajes": 15
+    },
+    {
+      "id": 88,
+      "nombre": "C. Simón Bolivar / Av. Niños Héroes",
+      "codigo": "GDL-086",
+      "zona": "GDL",
+      "lat": 20.66704,
+      "lon": -103.372444,
+      "anclajes": 14
+    },
+    {
+      "id": 154,
+      "nombre": "Av. Américas / Av. López Mateos",
+      "codigo": "GDL-087",
+      "zona": "GDL",
+      "lat": 20.69493,
+      "lon": -103.37333,
+      "anclajes": 15
+    },
+    {
+      "id": 155,
+      "nombre": "Av.Plan de San Luis/C. Andrés Teran",
+      "codigo": "GDL-088",
+      "zona": "GDL",
+      "lat": 20.6972,
+      "lon": -103.36773,
+      "anclajes": 15
+    },
+    {
+      "id": 156,
+      "nombre": "C. Juan Álvarez / C. Cruz Verde",
+      "codigo": "GDL-089",
+      "zona": "GDL",
+      "lat": 20.68456,
+      "lon": -103.35699,
+      "anclajes": 15
+    },
+    {
+      "id": 157,
+      "nombre": "Calz. Federalismo / C. Durango",
+      "codigo": "GDL-090",
+      "zona": "GDL",
+      "lat": 20.69865,
+      "lon": -103.35519,
+      "anclajes": 23
+    },
+    {
+      "id": 158,
+      "nombre": "C. Magisterio /Av. M. Ávila Camacho",
+      "codigo": "GDL-091",
+      "zona": "GDL",
+      "lat": 20.696097,
+      "lon": -103.349382,
+      "anclajes": 19
+    },
+    {
+      "id": 159,
+      "nombre": "Calz Federalismo / Av Plan San Luis",
+      "codigo": "GDL-092",
+      "zona": "GDL",
+      "lat": 20.69612093,
+      "lon": -103.3548768,
+      "anclajes": 15
+    },
+    {
+      "id": 160,
+      "nombre": "C. H Colegio Militar / Av. Américas",
+      "codigo": "GDL-093",
+      "zona": "GDL",
+      "lat": 20.69311,
+      "lon": -103.37298,
+      "anclajes": 15
+    },
+    {
+      "id": 161,
+      "nombre": "C. Manuel Cambre / C. Andrés Teran",
+      "codigo": "GDL-094",
+      "zona": "GDL",
+      "lat": 20.69324,
+      "lon": -103.36757,
+      "anclajes": 15
+    },
+    {
+      "id": 162,
+      "nombre": "C. Mariano Bárcena / Maestros",
+      "codigo": "GDL-095",
+      "zona": "GDL",
+      "lat": 20.692725,
+      "lon": -103.3516,
+      "anclajes": 19
+    },
+    {
+      "id": 163,
+      "nombre": "C. Jesús García / C. González Orte",
+      "codigo": "GDL-096",
+      "zona": "GDL",
+      "lat": 20.6891,
+      "lon": -103.35071,
+      "anclajes": 19
+    },
+    {
+      "id": 164,
+      "nombre": "C.Jesús García / C. Juan N Cumplido",
+      "codigo": "GDL-097",
+      "zona": "GDL",
+      "lat": 20.68859811,
+      "lon": -103.3584672,
+      "anclajes": 19
+    },
+    {
+      "id": 165,
+      "nombre": "Calz. Federalismo / Av. Maestros",
+      "codigo": "GDL-098",
+      "zona": "GDL",
+      "lat": 20.6919612,
+      "lon": -103.3540408,
+      "anclajes": 23
+    },
+    {
+      "id": 166,
+      "nombre": "C. Eulogio Parra /C.González Ortega",
+      "codigo": "GDL-099",
+      "zona": "GDL",
+      "lat": 20.687196,
+      "lon": -103.350525,
+      "anclajes": 11
+    },
+    {
+      "id": 167,
+      "nombre": "C. Ayuntamiento/C. A. R. Plasencia",
+      "codigo": "GDL-100",
+      "zona": "GDL",
+      "lat": 20.69269,
+      "lon": -103.37082,
+      "anclajes": 15
+    },
+    {
+      "id": 168,
+      "nombre": "C. Amado Nervo /C. José María Vigil",
+      "codigo": "GDL-101",
+      "zona": "GDL",
+      "lat": 20.68969,
+      "lon": -103.37486,
+      "anclajes": 15
+    },
+    {
+      "id": 169,
+      "nombre": "C. María Vigil/C. Manuel M. Dieguez",
+      "codigo": "GDL-102",
+      "zona": "GDL",
+      "lat": 20.68985,
+      "lon": -103.37071,
+      "anclajes": 11
+    },
+    {
+      "id": 170,
+      "nombre": "J. Clemente Orozco /C. Jesús García",
+      "codigo": "GDL-103",
+      "zona": "GDL",
+      "lat": 20.68861,
+      "lon": -103.365814,
+      "anclajes": 15
+    },
+    {
+      "id": 171,
+      "nombre": "C. Pedro Loza / Av. Manuel Acuña",
+      "codigo": "GDL-104",
+      "zona": "GDL",
+      "lat": 20.68348,
+      "lon": -103.34853,
+      "anclajes": 19
+    },
+    {
+      "id": 172,
+      "nombre": "C. Pino Suárez / C. Joaquin Angulo",
+      "codigo": "GDL-105",
+      "zona": "GDL",
+      "lat": 20.6822,
+      "lon": -103.34601,
+      "anclajes": 23
+    },
+    {
+      "id": 173,
+      "nombre": "C. Juan Álvarez / C. Belén",
+      "codigo": "GDL-106",
+      "zona": "GDL",
+      "lat": 20.68465,
+      "lon": -103.34526,
+      "anclajes": 22
+    },
+    {
+      "id": 174,
+      "nombre": "Calz. Federalismo/C. J. María Vigil",
+      "codigo": "GDL-107",
+      "zona": "GDL",
+      "lat": 20.68981,
+      "lon": -103.353973,
+      "anclajes": 15
+    },
+    {
+      "id": 175,
+      "nombre": "C. Hospital / C. Alameda",
+      "codigo": "GDL-108",
+      "zona": "GDL",
+      "lat": 20.68586,
+      "lon": -103.33964,
+      "anclajes": 19
+    },
+    {
+      "id": 176,
+      "nombre": "C. Eulogio Parra / Av. Américas",
+      "codigo": "GDL-109",
+      "zona": "GDL",
+      "lat": 20.68725,
+      "lon": -103.37363,
+      "anclajes": 19
+    },
+    {
+      "id": 177,
+      "nombre": "C. Manuel Diéguez/Av. Eulogio Parra",
+      "codigo": "GDL-110",
+      "zona": "GDL",
+      "lat": 20.68723,
+      "lon": -103.37084,
+      "anclajes": 11
+    },
+    {
+      "id": 178,
+      "nombre": "C. José Palomar / C. Hospital",
+      "codigo": "GDL-111",
+      "zona": "GDL",
+      "lat": 20.6863794,
+      "lon": -103.3368076,
+      "anclajes": 15
+    },
+    {
+      "id": 179,
+      "nombre": "C. C. Orozco/C. Gral. Eulogio Parra",
+      "codigo": "GDL-112",
+      "zona": "GDL",
+      "lat": 20.687,
+      "lon": -103.36582,
+      "anclajes": 19
+    },
+    {
+      "id": 181,
+      "nombre": "C. Monte Cáucaso / C. Alameda",
+      "codigo": "GDL-114",
+      "zona": "GDL",
+      "lat": 20.68925,
+      "lon": -103.3361,
+      "anclajes": 15
+    },
+    {
+      "id": 182,
+      "nombre": "Calz. Federalismo / C. Fco. Zarco",
+      "codigo": "GDL-115",
+      "zona": "GDL",
+      "lat": 20.68605,
+      "lon": -103.35408,
+      "anclajes": 15
+    },
+    {
+      "id": 183,
+      "nombre": "Av Manuel Acuña/C. Pablo Villaseñor",
+      "codigo": "GDL-116",
+      "zona": "GDL",
+      "lat": 20.68447,
+      "lon": -103.37989,
+      "anclajes": 11
+    },
+    {
+      "id": 184,
+      "nombre": "Av Manuel Acuña / C Fray Fco Frejes",
+      "codigo": "GDL-117",
+      "zona": "GDL",
+      "lat": 20.68427,
+      "lon": -103.37653,
+      "anclajes": 11
+    },
+    {
+      "id": 185,
+      "nombre": "C. Antonio de León / C. Garibaldi",
+      "codigo": "GDL-118",
+      "zona": "GDL",
+      "lat": 20.68168,
+      "lon": -103.38197,
+      "anclajes": 15
+    },
+    {
+      "id": 186,
+      "nombre": "C. Fco Rojas González /C. Garibaldi",
+      "codigo": "GDL-119",
+      "zona": "GDL",
+      "lat": 20.68161643,
+      "lon": -103.3786073,
+      "anclajes": 11
+    },
+    {
+      "id": 187,
+      "nombre": "C. Agustín de la Rosa /C. Garibaldi",
+      "codigo": "GDL-120",
+      "zona": "GDL",
+      "lat": 20.68132,
+      "lon": -103.37537,
+      "anclajes": 11
+    },
+    {
+      "id": 188,
+      "nombre": "C. Tomás V. Gómez / Av. México",
+      "codigo": "GDL-121",
+      "zona": "GDL",
+      "lat": 20.67914,
+      "lon": -103.38253,
+      "anclajes": 19
+    },
+    {
+      "id": 189,
+      "nombre": "C. Fray Luis DePalacio/ Av. México",
+      "codigo": "GDL-122",
+      "zona": "GDL",
+      "lat": 20.67947,
+      "lon": -103.37926,
+      "anclajes": 15
+    },
+    {
+      "id": 190,
+      "nombre": "C. Aurelio L. Gallardo / Av. México",
+      "codigo": "GDL-123",
+      "zona": "GDL",
+      "lat": 20.67945,
+      "lon": -103.376,
+      "anclajes": 11
+    },
+    {
+      "id": 191,
+      "nombre": "C. Severo Díaz / C. Justo Sierra",
+      "codigo": "GDL-124",
+      "zona": "GDL",
+      "lat": 20.6776729,
+      "lon": -103.3835367,
+      "anclajes": 15
+    },
+    {
+      "id": 192,
+      "nombre": "C. Pablo Villaseñor / Av. Hidalgo",
+      "codigo": "GDL-125",
+      "zona": "GDL",
+      "lat": 20.67691,
+      "lon": -103.37993,
+      "anclajes": 15
+    },
+    {
+      "id": 193,
+      "nombre": "C. Aurelio L. Gallardo / Av Hidalgo",
+      "codigo": "GDL-126",
+      "zona": "GDL",
+      "lat": 20.67647,
+      "lon": -103.37606,
+      "anclajes": 11
+    },
+    {
+      "id": 194,
+      "nombre": "Av. Vallarta / Av. de Los Arcos",
+      "codigo": "GDL-127",
+      "zona": "GDL",
+      "lat": 20.67438,
+      "lon": -103.38488,
+      "anclajes": 19
+    },
+    {
+      "id": 195,
+      "nombre": "Av. Morelos / C. Emilio Castelar",
+      "codigo": "GDL-128",
+      "zona": "GDL",
+      "lat": 20.67550481,
+      "lon": -103.3841454,
+      "anclajes": 23
+    },
+    {
+      "id": 196,
+      "nombre": "C. Lope de Vega / Av. Vallarta",
+      "codigo": "GDL-129",
+      "zona": "GDL",
+      "lat": 20.67455,
+      "lon": -103.37998,
+      "anclajes": 23
+    },
+    {
+      "id": 197,
+      "nombre": "C. J. Ruíz de Alarcón / Av Vallarta",
+      "codigo": "GDL-130",
+      "zona": "GDL",
+      "lat": 20.67448,
+      "lon": -103.37618,
+      "anclajes": 15
+    },
+    {
+      "id": 198,
+      "nombre": "C. Emilio Castelar / Av. La Paz",
+      "codigo": "GDL-131",
+      "zona": "GDL",
+      "lat": 20.67206,
+      "lon": -103.384,
+      "anclajes": 19
+    },
+    {
+      "id": 199,
+      "nombre": "C. Lope de Vega / Av. La Paz",
+      "codigo": "GDL-132",
+      "zona": "GDL",
+      "lat": 20.67207,
+      "lon": -103.37997,
+      "anclajes": 15
+    },
+    {
+      "id": 200,
+      "nombre": "C. J. Ruíz de Alarcón / Av. La Paz",
+      "codigo": "GDL-133",
+      "zona": "GDL",
+      "lat": 20.67189,
+      "lon": -103.37608,
+      "anclajes": 15
+    },
+    {
+      "id": 201,
+      "nombre": "C. Agustín Yáñez / C. Fco Ugarte",
+      "codigo": "GDL-134",
+      "zona": "GDL",
+      "lat": 20.670209,
+      "lon": -103.384221,
+      "anclajes": 19
+    },
+    {
+      "id": 202,
+      "nombre": "C. Victoriano Agüeros / Av. Unión",
+      "codigo": "GDL-135",
+      "zona": "GDL",
+      "lat": 20.66868,
+      "lon": -103.3731,
+      "anclajes": 11
+    },
+    {
+      "id": 203,
+      "nombre": "C. Lope de Vega/C. Efraín Glez Luna",
+      "codigo": "GDL-136",
+      "zona": "GDL",
+      "lat": 20.66927,
+      "lon": -103.37983,
+      "anclajes": 19
+    },
+    {
+      "id": 204,
+      "nombre": "C. Ruíz de Alarcón/C. Efraín G Luna",
+      "codigo": "GDL-137",
+      "zona": "GDL",
+      "lat": 20.66957,
+      "lon": -103.37623,
+      "anclajes": 11
+    },
+    {
+      "id": 205,
+      "nombre": "C. de la Nebulosa / C. Placeres",
+      "codigo": "GDL-138",
+      "zona": "GDL",
+      "lat": 20.66557,
+      "lon": -103.39134,
+      "anclajes": 15
+    },
+    {
+      "id": 206,
+      "nombre": "C. Firmamento / Av. Niños Héroes",
+      "codigo": "GDL-139",
+      "zona": "GDL",
+      "lat": 20.66667,
+      "lon": -103.38863,
+      "anclajes": 13
+    },
+    {
+      "id": 207,
+      "nombre": "C. Constelación / Av. de los Arcos",
+      "codigo": "GDL-140",
+      "zona": "GDL",
+      "lat": 20.66816,
+      "lon": -103.38488,
+      "anclajes": 15
+    },
+    {
+      "id": 208,
+      "nombre": "C. Ruíz de Alarcón/C. Agustín Yáñez",
+      "codigo": "GDL-141",
+      "zona": "GDL",
+      "lat": 20.66702,
+      "lon": -103.37621,
+      "anclajes": 15
+    },
+    {
+      "id": 209,
+      "nombre": "C. De la Nebulosa / C. Firmamento",
+      "codigo": "GDL-142",
+      "zona": "GDL",
+      "lat": 20.6647,
+      "lon": -103.38855,
+      "anclajes": 15
+    },
+    {
+      "id": 210,
+      "nombre": "C. Eclipse / Av. de Los Arcos",
+      "codigo": "GDL-143",
+      "zona": "GDL",
+      "lat": 20.6625,
+      "lon": -103.38407,
+      "anclajes": 23
+    },
+    {
+      "id": 211,
+      "nombre": "C. Primo Feliciano / C. San Gabriel",
+      "codigo": "GDL-144",
+      "zona": "GDL",
+      "lat": 20.669931,
+      "lon": -103.394307,
+      "anclajes": 11
+    },
+    {
+      "id": 212,
+      "nombre": "C. San Miguel / Av. San Francisco",
+      "codigo": "GDL-145",
+      "zona": "GDL",
+      "lat": 20.66736,
+      "lon": -103.3947,
+      "anclajes": 19
+    },
+    {
+      "id": 213,
+      "nombre": "Av. Guadalupe / C. Boturini",
+      "codigo": "GDL-146",
+      "zona": "GDL",
+      "lat": 20.6662882,
+      "lon": -103.3988986,
+      "anclajes": 11
+    },
+    {
+      "id": 214,
+      "nombre": "Calz. Lázaro Cárdenas/Av. Guadalupe",
+      "codigo": "GDL-147",
+      "zona": "GDL",
+      "lat": 20.6662159,
+      "lon": -103.396182,
+      "anclajes": 15
+    },
+    {
+      "id": 215,
+      "nombre": "C. San Rafael / Av. Tepeyac",
+      "codigo": "GDL-148",
+      "zona": "GDL",
+      "lat": 20.66501,
+      "lon": -103.39788,
+      "anclajes": 15
+    },
+    {
+      "id": 216,
+      "nombre": "Calz. Lázaro Cárdenas/López Mateos",
+      "codigo": "GDL-149",
+      "zona": "GDL",
+      "lat": 20.66511,
+      "lon": -103.39388,
+      "anclajes": 15
+    },
+    {
+      "id": 217,
+      "nombre": "C. Asunción / Av. Chapalita",
+      "codigo": "GDL-150",
+      "zona": "GDL",
+      "lat": 20.661387,
+      "lon": -103.392533,
+      "anclajes": 11
+    },
+    {
+      "id": 218,
+      "nombre": "C. Capuchinas / Av. Chapalita",
+      "codigo": "GDL-151",
+      "zona": "GDL",
+      "lat": 20.66011754,
+      "lon": -103.394863,
+      "anclajes": 15
+    },
+    {
+      "id": 219,
+      "nombre": "Parque de las Estrellas/C. Orión",
+      "codigo": "GDL-152",
+      "zona": "GDL",
+      "lat": 20.65931,
+      "lon": -103.38884,
+      "anclajes": 19
+    },
+    {
+      "id": 220,
+      "nombre": "C. Crepúsculo / Av. Tonantzin",
+      "codigo": "GDL-153",
+      "zona": "GDL",
+      "lat": 20.65846,
+      "lon": -103.39092,
+      "anclajes": 11
+    },
+    {
+      "id": 221,
+      "nombre": "C. Capuchinas / Av. Las Rosas",
+      "codigo": "GDL-154",
+      "zona": "GDL",
+      "lat": 20.65761,
+      "lon": -103.39363,
+      "anclajes": 15
+    },
+    {
+      "id": 222,
+      "nombre": "Parque de las Estrellas/Mariano Ote",
+      "codigo": "GDL-155",
+      "zona": "GDL",
+      "lat": 20.65712973,
+      "lon": -103.3883797,
+      "anclajes": 19
+    },
+    {
+      "id": 253,
+      "nombre": "C. Duque de Rivas/ C. López Cotilla",
+      "codigo": "GDL-156",
+      "zona": "GDL",
+      "lat": 20.67323693,
+      "lon": -103.3826946,
+      "anclajes": 15
+    },
+    {
+      "id": 224,
+      "nombre": "Av. Mariano Otero/ Av. De las Rosas",
+      "codigo": "GDL-157",
+      "zona": "GDL",
+      "lat": 20.654709,
+      "lon": -103.391595,
+      "anclajes": 15
+    },
+    {
+      "id": 225,
+      "nombre": "Av. Faro / Av. Las Rosas",
+      "codigo": "GDL-158",
+      "zona": "GDL",
+      "lat": 20.65158,
+      "lon": -103.38957,
+      "anclajes": 15
+    },
+    {
+      "id": 226,
+      "nombre": "C. Guadalupe Victoria /Del Ejercito",
+      "codigo": "GDL-159",
+      "zona": "GDL",
+      "lat": 20.66468,
+      "lon": -103.33357,
+      "anclajes": 19
+    },
+    {
+      "id": 227,
+      "nombre": "C.Silverio Garcia/Blvrd. García Ba",
+      "codigo": "GDL-160",
+      "zona": "GDL",
+      "lat": 20.66114,
+      "lon": -103.3315,
+      "anclajes": 11
+    },
+    {
+      "id": 228,
+      "nombre": "C. Rio Usumacinta/Blvrd García Barr",
+      "codigo": "GDL-161",
+      "zona": "GDL",
+      "lat": 20.65925,
+      "lon": -103.33055,
+      "anclajes": 19
+    },
+    {
+      "id": 229,
+      "nombre": "C. Rio Tuxpan / C. Salvador Lopez C",
+      "codigo": "GDL-162",
+      "zona": "GDL",
+      "lat": 20.65721,
+      "lon": -103.33046,
+      "anclajes": 19
+    },
+    {
+      "id": 231,
+      "nombre": "Av. Olímpica /C. José Rolon",
+      "codigo": "GDL-164",
+      "zona": "GDL",
+      "lat": 20.655,
+      "lon": -103.32186,
+      "anclajes": 15
+    },
+    {
+      "id": 232,
+      "nombre": "C. Rio Panuco/ Blvrd. García B.",
+      "codigo": "GDL-165",
+      "zona": "GDL",
+      "lat": 20.65251,
+      "lon": -103.32553,
+      "anclajes": 19
+    },
+    {
+      "id": 233,
+      "nombre": "C. Rio Principal / Blvrd. García B.",
+      "codigo": "GDL-166",
+      "zona": "GDL",
+      "lat": 20.65475,
+      "lon": -103.32719,
+      "anclajes": 19
+    },
+    {
+      "id": 234,
+      "nombre": "C. Rio San Juan de Dios/Blvrd. Garc",
+      "codigo": "GDL-167",
+      "zona": "GDL",
+      "lat": 20.64962,
+      "lon": -103.32356,
+      "anclajes": 23
+    },
+    {
+      "id": 235,
+      "nombre": "Av. Rio Nilo / C. Ramón Pacheco",
+      "codigo": "GDL-168",
+      "zona": "GDL",
+      "lat": 20.64874,
+      "lon": -103.31939,
+      "anclajes": 19
+    },
+    {
+      "id": 236,
+      "nombre": "Blvrd. García Barragán/ C. Rio Zapo",
+      "codigo": "GDL-169",
+      "zona": "GDL",
+      "lat": 20.64707,
+      "lon": -103.32147,
+      "anclajes": 19
+    },
+    {
+      "id": 237,
+      "nombre": "C. Relojeros/ C. Chamizal",
+      "codigo": "GDL-170",
+      "zona": "GDL",
+      "lat": 20.64698,
+      "lon": -103.30619,
+      "anclajes": 15
+    },
+    {
+      "id": 238,
+      "nombre": "C. Maquinistas / C. San Rafael",
+      "codigo": "GDL-171",
+      "zona": "GDL",
+      "lat": 20.6461,
+      "lon": -103.3102,
+      "anclajes": 19
+    },
+    {
+      "id": 239,
+      "nombre": "C. Chamizal / Av. Rio Nilo",
+      "codigo": "GDL-172",
+      "zona": "GDL",
+      "lat": 20.64434,
+      "lon": -103.30678,
+      "anclajes": 15
+    },
+    {
+      "id": 400,
+      "nombre": "Av. 5 de Febrero / Av. Dr. R Michel",
+      "codigo": "GDL-173",
+      "zona": "GDL",
+      "lat": 20.66197318,
+      "lon": -103.3460185,
+      "anclajes": 19
+    },
+    {
+      "id": 241,
+      "nombre": "C. Juan de Zumárraga / Av. Tepeyac",
+      "codigo": "GDL-174",
+      "zona": "GDL",
+      "lat": 20.6641,
+      "lon": -103.4003,
+      "anclajes": 11
+    },
+    {
+      "id": 242,
+      "nombre": "C. Ermita / C. San Uriel",
+      "codigo": "GDL-175",
+      "zona": "GDL",
+      "lat": 20.66234072,
+      "lon": -103.3981344,
+      "anclajes": 11
+    },
+    {
+      "id": 243,
+      "nombre": "C. San Bonifacio/ Paseo Benedictino",
+      "codigo": "GDL-176",
+      "zona": "GDL",
+      "lat": 20.67276201,
+      "lon": -103.3976249,
+      "anclajes": 11
+    },
+    {
+      "id": 244,
+      "nombre": "C. Fray Fco Frejes / C. Fco Zarco",
+      "codigo": "GDL-177",
+      "zona": "GDL",
+      "lat": 20.68669,
+      "lon": -103.37657,
+      "anclajes": 15
+    },
+    {
+      "id": 246,
+      "nombre": "Salvador Quevedo/López Portillo",
+      "codigo": "GDL-178",
+      "zona": "GDL",
+      "lat": 20.6853596,
+      "lon": -103.3339031,
+      "anclajes": 15
+    },
+    {
+      "id": 247,
+      "nombre": "C. Monte Cáucaso / C. Sierra Nevada",
+      "codigo": "GDL-179",
+      "zona": "GDL",
+      "lat": 20.68795,
+      "lon": -103.33343,
+      "anclajes": 23
+    },
+    {
+      "id": 248,
+      "nombre": "C. Montes Pirineos/Salvador Quevedo",
+      "codigo": "GDL-180",
+      "zona": "GDL",
+      "lat": 20.68692,
+      "lon": -103.33467,
+      "anclajes": 19
+    },
+    {
+      "id": 249,
+      "nombre": "C.Ignacio Rmrz / Av Plan de San Lui",
+      "codigo": "GDL-181",
+      "zona": "GDL",
+      "lat": 20.69705,
+      "lon": -103.36322,
+      "anclajes": 15
+    },
+    {
+      "id": 255,
+      "nombre": "C. General Coronado / C. Manuel Acu",
+      "codigo": "GDL-182",
+      "zona": "GDL",
+      "lat": 20.6843419,
+      "lon": -103.3646036,
+      "anclajes": 15
+    },
+    {
+      "id": 256,
+      "nombre": "Calz. Independencia / Av. Niños Hér",
+      "codigo": "GDL-183",
+      "zona": "GDL",
+      "lat": 20.6639862,
+      "lon": -103.3480775,
+      "anclajes": 19
+    },
+    {
+      "id": 257,
+      "nombre": "Ingreso Cucei / Revolución",
+      "codigo": "GDL-184",
+      "zona": "GDL",
+      "lat": 20.659581,
+      "lon": -103.324147,
+      "anclajes": 19
+    },
+    {
+      "id": 258,
+      "nombre": "Dr. Silverio García /Av. Revolución",
+      "codigo": "GDL-185",
+      "zona": "GDL",
+      "lat": 20.66318,
+      "lon": -103.32942,
+      "anclajes": 23
+    },
+    {
+      "id": 259,
+      "nombre": "C. Argentina / C. Francia",
+      "codigo": "GDL-186",
+      "zona": "GDL",
+      "lat": 20.66429,
+      "lon": -103.3628,
+      "anclajes": 15
+    },
+    {
+      "id": 260,
+      "nombre": "Av. 16 de Septiembre / C. Priscilia",
+      "codigo": "GDL-187",
+      "zona": "GDL",
+      "lat": 20.6726395,
+      "lon": -103.3471549,
+      "anclajes": 15
+    },
+    {
+      "id": 261,
+      "nombre": "Av. de la Presa / Av. Manuel A. Cam",
+      "codigo": "GDL-188",
+      "zona": "GDL",
+      "lat": 20.70928,
+      "lon": -103.37015,
+      "anclajes": 15
+    },
+    {
+      "id": 262,
+      "nombre": "C. 5 de Mayo/ Av. Revolución",
+      "codigo": "GDL-189",
+      "zona": "GDL",
+      "lat": 20.6692,
+      "lon": -103.34116,
+      "anclajes": 15
+    },
+    {
+      "id": 263,
+      "nombre": "C. Anahuac / Av. Revolución",
+      "codigo": "GDL-190",
+      "zona": "GDL",
+      "lat": 20.6708,
+      "lon": -103.34385,
+      "anclajes": 31
+    },
+    {
+      "id": 264,
+      "nombre": "Plaza de los Mariachis",
+      "codigo": "GDL-191",
+      "zona": "GDL",
+      "lat": 20.6744,
+      "lon": -103.34123,
+      "anclajes": 23
+    },
+    {
+      "id": 265,
+      "nombre": "Calle A1 / Av. Manuel A. Camacho",
+      "codigo": "GDL-192",
+      "zona": "GDL",
+      "lat": 20.70656,
+      "lon": -103.36564,
+      "anclajes": 15
+    },
+    {
+      "id": 266,
+      "nombre": "C. Hawai / C. Nicolás Romero",
+      "codigo": "GDL-193",
+      "zona": "GDL",
+      "lat": 20.70211,
+      "lon": -103.35996,
+      "anclajes": 15
+    },
+    {
+      "id": 267,
+      "nombre": "Av. Revolución / C. Ramón López Ve",
+      "codigo": "GDL-194",
+      "zona": "GDL",
+      "lat": 20.65072597,
+      "lon": -103.3101626,
+      "anclajes": 15
+    },
+    {
+      "id": 268,
+      "nombre": "C. Ramón Corona / Av. Juárez",
+      "codigo": "GDL-195",
+      "zona": "GDL",
+      "lat": 20.67529,
+      "lon": -103.34656,
+      "anclajes": 23
+    },
+    {
+      "id": 269,
+      "nombre": "C. Esmeralda / C. Manuel Acuña",
+      "codigo": "GDL-196",
+      "zona": "GDL",
+      "lat": 20.68361,
+      "lon": -103.33756,
+      "anclajes": 23
+    },
+    {
+      "id": 270,
+      "nombre": "Av. Río Nilo / Av. Revolución",
+      "codigo": "GDL-197",
+      "zona": "GDL",
+      "lat": 20.64517,
+      "lon": -103.30313,
+      "anclajes": 15
+    },
+    {
+      "id": 271,
+      "nombre": "Av. Alcalde / C. Hospital",
+      "codigo": "GDL-198",
+      "zona": "GDL",
+      "lat": 20.68504,
+      "lon": -103.34796,
+      "anclajes": 31
+    },
+    {
+      "id": 272,
+      "nombre": "C. Jesús García/Av. Alcalde",
+      "codigo": "GDL-199",
+      "zona": "GDL",
+      "lat": 20.6891,
+      "lon": -103.34806,
+      "anclajes": 15
+    },
+    {
+      "id": 273,
+      "nombre": "Av. Alcalde /Av. Manuel A. Camacho",
+      "codigo": "GDL-200",
+      "zona": "GDL",
+      "lat": 20.69406,
+      "lon": -103.34824,
+      "anclajes": 23
+    },
+    {
+      "id": 274,
+      "nombre": "Av. de los Normalistas / C. M. Guti",
+      "codigo": "GDL-201",
+      "zona": "GDL",
+      "lat": 20.69442,
+      "lon": -103.34474,
+      "anclajes": 15
+    },
+    {
+      "id": 275,
+      "nombre": "C. Magisterio / C. Durango",
+      "codigo": "GDL-202",
+      "zona": "GDL",
+      "lat": 20.69898,
+      "lon": -103.34893,
+      "anclajes": 15
+    },
+    {
+      "id": 276,
+      "nombre": "Av. Federalismo / C. Tamaulipas",
+      "codigo": "GDL-203",
+      "zona": "GDL",
+      "lat": 20.70046,
+      "lon": -103.35478,
+      "anclajes": 23
+    },
+    {
+      "id": 277,
+      "nombre": "C. España/ Av. Chapultepec",
+      "codigo": "GDL-204",
+      "zona": "GDL",
+      "lat": 20.6651,
+      "lon": -103.36807,
+      "anclajes": 23
+    },
+    {
+      "id": 278,
+      "nombre": "Av. Agustín Yáñez /C. Venezuela",
+      "codigo": "GDL-205",
+      "zona": "GDL",
+      "lat": 20.66265,
+      "lon": -103.36554,
+      "anclajes": 15
+    },
+    {
+      "id": 279,
+      "nombre": "C. Suiza / Av. Enrique Díaz de león",
+      "codigo": "GDL-206",
+      "zona": "GDL",
+      "lat": 20.66231,
+      "lon": -103.36011,
+      "anclajes": 15
+    },
+    {
+      "id": 280,
+      "nombre": "C. Lázaro Pérez / C. Escorza",
+      "codigo": "GDL-207",
+      "zona": "GDL",
+      "lat": 20.66563,
+      "lon": -103.35802,
+      "anclajes": 15
+    },
+    {
+      "id": 281,
+      "nombre": "Av. España / Av. Federalismo",
+      "codigo": "GDL-208",
+      "zona": "GDL",
+      "lat": 20.66081,
+      "lon": -103.35704,
+      "anclajes": 31
+    },
+    {
+      "id": 282,
+      "nombre": "Calz. del Campesino / Calz. Indepen",
+      "codigo": "GDL-209",
+      "zona": "GDL",
+      "lat": 20.6605183,
+      "lon": -103.3503245,
+      "anclajes": 19
+    },
+    {
+      "id": 283,
+      "nombre": "Av. Washington / Calz. Independenci",
+      "codigo": "GDL-210",
+      "zona": "GDL",
+      "lat": 20.65775,
+      "lon": -103.35132,
+      "anclajes": 31
+    },
+    {
+      "id": 284,
+      "nombre": "Av. Washington / C. Rusia",
+      "codigo": "GDL-211",
+      "zona": "GDL",
+      "lat": 20.65883,
+      "lon": -103.35468,
+      "anclajes": 15
+    },
+    {
+      "id": 285,
+      "nombre": "C. Nicolás Romero / C. Jaime Nunó",
+      "codigo": "GDL-212",
+      "zona": "GDL",
+      "lat": 20.70047,
+      "lon": -103.36158,
+      "anclajes": 15
+    },
+    {
+      "id": 323,
+      "nombre": "C. Palavicini / Av. Circunvalación",
+      "codigo": "GDL-213",
+      "zona": "GDL",
+      "lat": 20.70467,
+      "lon": -103.345589,
+      "anclajes": 19
+    },
+    {
+      "id": 304,
+      "nombre": "C. Chihuahua / C. Miguel Galindo",
+      "codigo": "GDL-214",
+      "zona": "GDL",
+      "lat": 20.702745,
+      "lon": -103.356511,
+      "anclajes": 19
+    },
+    {
+      "id": 307,
+      "nombre": "C. Durango / C. Gregorio Davila",
+      "codigo": "GDL-215",
+      "zona": "GDL",
+      "lat": 20.6991544,
+      "lon": -103.3599679,
+      "anclajes": 19
+    },
+    {
+      "id": 311,
+      "nombre": "C. Tepic / C. Frías.",
+      "codigo": "GDL-216",
+      "zona": "GDL",
+      "lat": 20.6964426,
+      "lon": -103.3592252,
+      "anclajes": 15
+    },
+    {
+      "id": 303,
+      "nombre": "C. Ontario / Av. Manuel Acuña",
+      "codigo": "GDL-217",
+      "zona": "GDL",
+      "lat": 20.684519,
+      "lon": -103.383085,
+      "anclajes": 19
+    },
+    {
+      "id": 321,
+      "nombre": "C.Hércules / Av. De la Arboleda",
+      "codigo": "GDL-218",
+      "zona": "GDL",
+      "lat": 20.664447,
+      "lon": -103.3853111,
+      "anclajes": 19
+    },
+    {
+      "id": 326,
+      "nombre": "C. D. Rivera / C. Filósofos",
+      "codigo": "GDL-219",
+      "zona": "GDL",
+      "lat": 20.698197,
+      "lon": -103.342554,
+      "anclajes": 15
+    },
+    {
+      "id": 94,
+      "nombre": "Av. Científicos / C. Filósofos",
+      "codigo": "GDL-220",
+      "zona": "GDL",
+      "lat": 20.69995,
+      "lon": -103.342347,
+      "anclajes": 15
+    },
+    {
+      "id": 324,
+      "nombre": "De los científicos/ J. J. Tablada",
+      "codigo": "GDL-221",
+      "zona": "GDL",
+      "lat": 20.700192,
+      "lon": -103.345961,
+      "anclajes": 23
+    },
+    {
+      "id": 318,
+      "nombre": "C. Aldama / C. Dr. Leonardo Oliva",
+      "codigo": "GDL-222",
+      "zona": "GDL",
+      "lat": 20.6674498,
+      "lon": -103.3295016,
+      "anclajes": 19
+    },
+    {
+      "id": 305,
+      "nombre": "C. Dr. Pérez Arce/ C. Gómez Farias",
+      "codigo": "GDL-223",
+      "zona": "GDL",
+      "lat": 20.6679675,
+      "lon": -103.326566,
+      "anclajes": 19
+    },
+    {
+      "id": 317,
+      "nombre": "C. Reyes Flores/ C.Federico Medrano",
+      "codigo": "GDL-224",
+      "zona": "GDL",
+      "lat": 20.6649445,
+      "lon": -103.3266332,
+      "anclajes": 19
+    },
+    {
+      "id": 322,
+      "nombre": "C. Gral Carlos Fuero/Av. Revolución",
+      "codigo": "GDL-225",
+      "zona": "GDL",
+      "lat": 20.6542657,
+      "lon": -103.3159228,
+      "anclajes": 19
+    },
+    {
+      "id": 325,
+      "nombre": "C. Luis G. Cuevas /Av. Revolución",
+      "codigo": "GDL-226",
+      "zona": "GDL",
+      "lat": 20.652408,
+      "lon": -103.312902,
+      "anclajes": 15
+    },
+    {
+      "id": 327,
+      "nombre": "C. Artistas / C. Carlos Pereira",
+      "codigo": "GDL-227",
+      "zona": "GDL",
+      "lat": 20.695636,
+      "lon": -103.339378,
+      "anclajes": 19
+    },
+    {
+      "id": 350,
+      "nombre": "C. La Soledad / Av. Ávila Camacho",
+      "codigo": "GDL-228",
+      "zona": "GDL",
+      "lat": 20.70509097,
+      "lon": -103.3630889,
+      "anclajes": 23
+    },
+    {
+      "id": 363,
+      "nombre": "C. Guanajuato / C. Miguel Galindo",
+      "codigo": "GDL-229",
+      "zona": "GDL",
+      "lat": 20.69446484,
+      "lon": -103.3569374,
+      "anclajes": 23
+    },
+    {
+      "id": 359,
+      "nombre": "Francisco Marquez/Federalismo",
+      "codigo": "GDL-230",
+      "zona": "GDL",
+      "lat": 20.703986,
+      "lon": -103.354926,
+      "anclajes": 23
+    },
+    {
+      "id": 381,
+      "nombre": "C. Tabasco / C. Juan de la Barrera",
+      "codigo": "GDL-231",
+      "zona": "GDL",
+      "lat": 20.70309729,
+      "lon": -103.3533536,
+      "anclajes": 19
+    },
+    {
+      "id": 377,
+      "nombre": "Tamaulipas/Andrés Quintana Roo",
+      "codigo": "GDL-232",
+      "zona": "GDL",
+      "lat": 20.69986543,
+      "lon": -103.3508449,
+      "anclajes": 19
+    },
+    {
+      "id": 328,
+      "nombre": "S .Juan de Ulúa /Andrés Q.R.",
+      "codigo": "GDL-233",
+      "zona": "GDL",
+      "lat": 20.70446252,
+      "lon": -103.3513929,
+      "anclajes": 19
+    },
+    {
+      "id": 332,
+      "nombre": "C. Chihuahua / C. Francisco Tejeda",
+      "codigo": "GDL-234",
+      "zona": "GDL",
+      "lat": 20.70237629,
+      "lon": -103.350088,
+      "anclajes": 15
+    },
+    {
+      "id": 329,
+      "nombre": "Félix Palavicini / División del Nte",
+      "codigo": "GDL-235",
+      "zona": "GDL",
+      "lat": 20.70552451,
+      "lon": -103.3486422,
+      "anclajes": 19
+    },
+    {
+      "id": 330,
+      "nombre": "Félix Palavicini / Antonio Alcalde",
+      "codigo": "GDL-236",
+      "zona": "GDL",
+      "lat": 20.70352059,
+      "lon": -103.347726,
+      "anclajes": 15
+    },
+    {
+      "id": 372,
+      "nombre": "José Juan Tablada / José Vasconcelos",
+      "codigo": "GDL-238",
+      "zona": "GDL",
+      "lat": 20.6974806,
+      "lon": -103.3465873,
+      "anclajes": 19
+    },
+    {
+      "id": 333,
+      "nombre": "Silvestre Revueltas Fray Antonio A",
+      "codigo": "GDL-239",
+      "zona": "GDL",
+      "lat": 20.69124651,
+      "lon": -103.3480637,
+      "anclajes": 19
+    },
+    {
+      "id": 383,
+      "nombre": "Hilarion Romero Gil/Gabriela Mistral",
+      "codigo": "GDL-240",
+      "zona": "GDL",
+      "lat": 20.6899885,
+      "lon": -103.344978,
+      "anclajes": 19
+    },
+    {
+      "id": 379,
+      "nombre": "Junípero Serra/José Encarnación",
+      "codigo": "GDL-241",
+      "zona": "GDL",
+      "lat": 20.6940234,
+      "lon": -103.3417557,
+      "anclajes": 19
+    },
+    {
+      "id": 335,
+      "nombre": "C. Sevilla / Av. de los Maestros",
+      "codigo": "GDL-242",
+      "zona": "GDL",
+      "lat": 20.69389142,
+      "lon": -103.3387738,
+      "anclajes": 19
+    },
+    {
+      "id": 336,
+      "nombre": "Av. De los Maestros / C. Mil Cumbres",
+      "codigo": "GDL-243",
+      "zona": "GDL",
+      "lat": 20.69436327,
+      "lon": -103.337267,
+      "anclajes": 23
+    },
+    {
+      "id": 337,
+      "nombre": "C. Alejandrina / C. Torres Quintero",
+      "codigo": "GDL-245",
+      "zona": "GDL",
+      "lat": 20.69091412,
+      "lon": -103.3371268,
+      "anclajes": 19
+    },
+    {
+      "id": 385,
+      "nombre": "Juan José Baz/Silvestre Revueltas",
+      "codigo": "GDL-246",
+      "zona": "GDL",
+      "lat": 20.69152345,
+      "lon": -103.3406014,
+      "anclajes": 19
+    },
+    {
+      "id": 354,
+      "nombre": "C. Tenerías / C. Belén",
+      "codigo": "GDL-247",
+      "zona": "GDL",
+      "lat": 20.68875461,
+      "lon": -103.3455327,
+      "anclajes": 18
+    },
+    {
+      "id": 346,
+      "nombre": "C. Hospital / C. Humboldt",
+      "codigo": "GDL-248",
+      "zona": "GDL",
+      "lat": 20.68560931,
+      "lon": -103.3437307,
+      "anclajes": 19
+    },
+    {
+      "id": 347,
+      "nombre": "C. Agustín Rivera / C. Manuel Acuña",
+      "codigo": "GDL-249",
+      "zona": "GDL",
+      "lat": 20.68385128,
+      "lon": -103.3416855,
+      "anclajes": 23
+    },
+    {
+      "id": 348,
+      "nombre": "Clemente Aguirre / Roque Abarca",
+      "codigo": "GDL-250",
+      "zona": "GDL",
+      "lat": 20.68323747,
+      "lon": -103.3352032,
+      "anclajes": 19
+    },
+    {
+      "id": 373,
+      "nombre": "C. Pablo Valdez / C. Mariano Jiménez",
+      "codigo": "GDL-251",
+      "zona": "GDL",
+      "lat": 20.68217101,
+      "lon": -103.334639,
+      "anclajes": 19
+    },
+    {
+      "id": 384,
+      "nombre": "C. Calpulalpan / C. Independencia",
+      "codigo": "GDL-252",
+      "zona": "GDL",
+      "lat": 20.678006,
+      "lon": -103.341808,
+      "anclajes": 23
+    },
+    {
+      "id": 388,
+      "nombre": "C. General Salazar / C. Federación",
+      "codigo": "GDL-253",
+      "zona": "GDL",
+      "lat": 20.67957162,
+      "lon": -103.3366606,
+      "anclajes": 23
+    },
+    {
+      "id": 386,
+      "nombre": "Porfirio Díaz/Francisco Javier Mina",
+      "codigo": "GDL-254",
+      "zona": "GDL",
+      "lat": 20.67067005,
+      "lon": -103.3245211,
+      "anclajes": 23
+    },
+    {
+      "id": 360,
+      "nombre": "C. Cabañas / C. Industria",
+      "codigo": "GDL-255",
+      "zona": "GDL",
+      "lat": 20.67828685,
+      "lon": -103.338339,
+      "anclajes": 15
+    },
+    {
+      "id": 368,
+      "nombre": "Josefa Ortíz/Juan Díaz Covarrubias",
+      "codigo": "GDL-256",
+      "zona": "GDL",
+      "lat": 20.67633662,
+      "lon": -103.3341202,
+      "anclajes": 19
+    },
+    {
+      "id": 355,
+      "nombre": "C. Dionisio Rodr./ C. José Fernando",
+      "codigo": "GDL-257",
+      "zona": "GDL",
+      "lat": 20.67534083,
+      "lon": -103.3362015,
+      "anclajes": 19
+    },
+    {
+      "id": 338,
+      "nombre": "Manuel Doblado / Dionisio Rodriguez",
+      "codigo": "GDL-258",
+      "zona": "GDL",
+      "lat": 20.67462037,
+      "lon": -103.3319619,
+      "anclajes": 15
+    },
+    {
+      "id": 331,
+      "nombre": "C. Dionisio Rodriguez / C. Cabañas",
+      "codigo": "GDL-259",
+      "zona": "GDL",
+      "lat": 20.67570792,
+      "lon": -103.3379879,
+      "anclajes": 23
+    },
+    {
+      "id": 374,
+      "nombre": "Churubusco / Álvaro Obregón",
+      "codigo": "GDL-260",
+      "zona": "GDL",
+      "lat": 20.67221287,
+      "lon": -103.3336371,
+      "anclajes": 15
+    },
+    {
+      "id": 334,
+      "nombre": "C. Jarauta, Javier Mina",
+      "codigo": "GDL-261",
+      "zona": "GDL",
+      "lat": 20.67264502,
+      "lon": -103.3315415,
+      "anclajes": 15
+    },
+    {
+      "id": 369,
+      "nombre": "Av. Gigantes / C. Aquiles Serdán",
+      "codigo": "GDL-262",
+      "zona": "GDL",
+      "lat": 20.67042853,
+      "lon": -103.3300445,
+      "anclajes": 15
+    },
+    {
+      "id": 353,
+      "nombre": "C. Aldama / C. 5 de Mayo",
+      "codigo": "GDL-263",
+      "zona": "GDL",
+      "lat": 20.67144009,
+      "lon": -103.340668,
+      "anclajes": 19
+    },
+    {
+      "id": 375,
+      "nombre": "Federico Medrano / Antonio Rosales",
+      "codigo": "GDL-264",
+      "zona": "GDL",
+      "lat": 20.66960141,
+      "lon": -103.3391913,
+      "anclajes": 15
+    },
+    {
+      "id": 364,
+      "nombre": "C. Clavel / Av. Gigantes",
+      "codigo": "GDL-265",
+      "zona": "GDL",
+      "lat": 20.67219009,
+      "lon": -103.3372675,
+      "anclajes": 15
+    },
+    {
+      "id": 376,
+      "nombre": "C. Matamoros / Calz. Revolución",
+      "codigo": "GDL-266",
+      "zona": "GDL",
+      "lat": 20.66832144,
+      "lon": -103.3374401,
+      "anclajes": 15
+    },
+    {
+      "id": 357,
+      "nombre": "Heroico Colegio Militar/Revolución",
+      "codigo": "GDL-268",
+      "zona": "GDL",
+      "lat": 20.66646875,
+      "lon": -103.3340264,
+      "anclajes": 15
+    },
+    {
+      "id": 358,
+      "nombre": "Valentín Gómez Farías/Riva Palacio",
+      "codigo": "GDL-269",
+      "zona": "GDL",
+      "lat": 20.67007998,
+      "lon": -103.3330958,
+      "anclajes": 15
+    },
+    {
+      "id": 356,
+      "nombre": "C.Gómez Farías / Calz. del Ejército",
+      "codigo": "GDL-270",
+      "zona": "GDL",
+      "lat": 20.66928865,
+      "lon": -103.3313351,
+      "anclajes": 15
+    },
+    {
+      "id": 366,
+      "nombre": "Román Morales / Álvaro Obregón",
+      "codigo": "GDL-271",
+      "zona": "GDL",
+      "lat": 20.67031359,
+      "lon": -103.3269727,
+      "anclajes": 14
+    },
+    {
+      "id": 382,
+      "nombre": "C. Jaime Nunó / C. De la Costa",
+      "codigo": "GDL-272",
+      "zona": "GDL",
+      "lat": 20.69384112,
+      "lon": -103.3649267,
+      "anclajes": 15
+    },
+    {
+      "id": 370,
+      "nombre": "C. Aldama / C. Orozco Berra",
+      "codigo": "GDL-273",
+      "zona": "GDL",
+      "lat": 20.66550532,
+      "lon": -103.323109,
+      "anclajes": 15
+    },
+    {
+      "id": 365,
+      "nombre": "Corregidora/Pensador Mexicano",
+      "codigo": "GDL-274",
+      "zona": "GDL",
+      "lat": 20.66328884,
+      "lon": -103.3249723,
+      "anclajes": 15
+    },
+    {
+      "id": 361,
+      "nombre": "C. Antonio Tello / C. Lindavista",
+      "codigo": "GDL-275",
+      "zona": "GDL",
+      "lat": 20.65867106,
+      "lon": -103.3204866,
+      "anclajes": 15
+    },
+    {
+      "id": 395,
+      "nombre": "Francisco de Quevedo / Miguel Lerdo",
+      "codigo": "GDL-276",
+      "zona": "GDL",
+      "lat": 20.67104523,
+      "lon": -103.3813491,
+      "anclajes": 19
+    },
+    {
+      "id": 393,
+      "nombre": "Av. 8 de julio / Alemania",
+      "codigo": "GDL-277",
+      "zona": "GDL",
+      "lat": 20.66272886,
+      "lon": -103.3547671,
+      "anclajes": 19
+    },
+    {
+      "id": 392,
+      "nombre": "Ignacio Ramirez / Del Istmo",
+      "codigo": "GDL-278",
+      "zona": "GDL",
+      "lat": 20.6947212,
+      "lon": -103.3633977,
+      "anclajes": 19
+    },
+    {
+      "id": 397,
+      "nombre": "Belen / Av. de los Maestros",
+      "codigo": "GDL-279",
+      "zona": "GDL",
+      "lat": 20.69305316,
+      "lon": -103.3459001,
+      "anclajes": 19
+    },
+    {
+      "id": 396,
+      "nombre": "Av. Vallarta / C. Aurelio Aceves",
+      "codigo": "GDL-280",
+      "zona": "GDL",
+      "lat": 20.674248,
+      "lon": -103.388504,
+      "anclajes": 19
+    },
+    {
+      "id": 398,
+      "nombre": "Nevado Toluca / Av de los Maestros",
+      "codigo": "GDL-281",
+      "zona": "GDL",
+      "lat": 20.69507454,
+      "lon": -103.3334561,
+      "anclajes": 19
+    },
+    {
+      "id": 412,
+      "nombre": "Libertad/Av. Chapultepec Sur",
+      "codigo": "GDL-282",
+      "zona": "GDL",
+      "lat": 20.673076,
+      "lon": -103.368316,
+      "anclajes": 19
+    },
+    {
+      "id": 408,
+      "nombre": "Calderón de la Barca /Av. de La Paz",
+      "codigo": "GDL-283",
+      "zona": "GDL",
+      "lat": 20.6720556,
+      "lon": -103.3786111,
+      "anclajes": 19
+    },
+    {
+      "id": 411,
+      "nombre": "F. de Quevedo/M. Lopez Cotilla",
+      "codigo": "GDL-284",
+      "zona": "GDL",
+      "lat": 20.6735985,
+      "lon": -103.3813416,
+      "anclajes": 19
+    },
+    {
+      "id": 410,
+      "nombre": "D. de Rivas/Av. Ignacio L Vallarta",
+      "codigo": "GDL-285",
+      "zona": "GDL",
+      "lat": 20.674181,
+      "lon": -103.382709,
+      "anclajes": 19
+    },
+    {
+      "id": 409,
+      "nombre": "T. V. Gómez /Av. José Maria Morelos",
+      "codigo": "GDL-286",
+      "zona": "GDL",
+      "lat": 20.675788,
+      "lon": -103.382649,
+      "anclajes": 19
+    },
+    {
+      "id": 413,
+      "nombre": "Av .de los Arcos/M. Lopez Cotilla",
+      "codigo": "GDL-287",
+      "zona": "GDL",
+      "lat": 20.673211,
+      "lon": -103.384808,
+      "anclajes": 19
+    },
+    {
+      "id": 506,
+      "nombre": "C. Pompeya / Av. Rubén Darío",
+      "codigo": "GDL-288",
+      "zona": "GDL",
+      "lat": 20.6905821,
+      "lon": -103.3846438,
+      "anclajes": 19
+    },
+    {
+      "id": 441,
+      "nombre": "Av. México / Av. López Mateos",
+      "codigo": "GDL-289",
+      "zona": "GDL",
+      "lat": 20.679546,
+      "lon": -103.384591,
+      "anclajes": 15
+    },
+    {
+      "id": 507,
+      "nombre": "C. Nápoles / Av. Rubén Darío",
+      "codigo": "GDL-290",
+      "zona": "GDL",
+      "lat": 20.692,
+      "lon": -103.383626,
+      "anclajes": 19
+    },
+    {
+      "id": 490,
+      "nombre": "Av. México / Av. Yaquis",
+      "codigo": "GDL-291",
+      "zona": "GDL",
+      "lat": 20.679313,
+      "lon": -103.39312,
+      "anclajes": 11
+    },
+    {
+      "id": 512,
+      "nombre": "C. Gral. Coronado / C. Miraflores",
+      "codigo": "GDL-292",
+      "zona": "GDL",
+      "lat": 20.692559,
+      "lon": -103.364358,
+      "anclajes": 15
+    },
+    {
+      "id": 414,
+      "nombre": "Tucidides / Hidalgo",
+      "codigo": "GDL-294",
+      "zona": "GDL",
+      "lat": 20.676472,
+      "lon": -103.396028,
+      "anclajes": 19
+    },
+    {
+      "id": 416,
+      "nombre": "C. Esquilo / C. Alejandro",
+      "codigo": "GDL-296",
+      "zona": "GDL",
+      "lat": 20.6756111,
+      "lon": -103.4006667,
+      "anclajes": 15
+    },
+    {
+      "id": 415,
+      "nombre": "San Juan de los Lagos / Chapala",
+      "codigo": "GDL-298",
+      "zona": "GDL",
+      "lat": 20.672946,
+      "lon": -103.393727,
+      "anclajes": 15
+    },
+    {
+      "id": 443,
+      "nombre": "Av. Toltecas / C. Huicholes",
+      "codigo": "GDL-299",
+      "zona": "GDL",
+      "lat": 20.681944,
+      "lon": -103.395218,
+      "anclajes": 19
+    },
+    {
+      "id": 445,
+      "nombre": "C. Enrique Rodó / C. J.M. Heredia",
+      "codigo": "GDL-300",
+      "zona": "GDL",
+      "lat": 20.688609,
+      "lon": -103.379321,
+      "anclajes": 19
+    },
+    {
+      "id": 417,
+      "nombre": "C. Órbita / C. Astros",
+      "codigo": "GDL-302",
+      "zona": "GDL",
+      "lat": 20.6673611,
+      "lon": -103.3865,
+      "anclajes": 15
+    },
+    {
+      "id": 442,
+      "nombre": "Sta. Irene / Av. Lopez Mateos Sur",
+      "codigo": "GDL-303",
+      "zona": "GDL",
+      "lat": 20.6678056,
+      "lon": -103.3921389,
+      "anclajes": 19
+    },
+    {
+      "id": 418,
+      "nombre": "J. M. B. y Souza/P. Feliciano",
+      "codigo": "GDL-304",
+      "zona": "GDL",
+      "lat": 20.670719,
+      "lon": -103.39679,
+      "anclajes": 15
+    },
+    {
+      "id": 428,
+      "nombre": "Calz.Federalismo /C.Juan Alvarez",
+      "codigo": "GDL-307",
+      "zona": "GDL",
+      "lat": 20.684369,
+      "lon": -103.3539,
+      "anclajes": 19
+    },
+    {
+      "id": 429,
+      "nombre": "C. Ignacio Ramírez /C. Ering",
+      "codigo": "GDL-308",
+      "zona": "GDL",
+      "lat": 20.6998,
+      "lon": -103.363098,
+      "anclajes": 19
+    },
+    {
+      "id": 493,
+      "nombre": "Federalismo / Av. Circunvalación",
+      "codigo": "GDL-309",
+      "zona": "GDL",
+      "lat": 20.707258,
+      "lon": -103.355018,
+      "anclajes": 15
+    },
+    {
+      "id": 448,
+      "nombre": "C. Alameda / C. Gonzálo Curiel",
+      "codigo": "GDL-310",
+      "zona": "GDL",
+      "lat": 20.6923134,
+      "lon": -103.3344214,
+      "anclajes": 15
+    },
+    {
+      "id": 422,
+      "nombre": "Glez Gallo / Calz.Independencia",
+      "codigo": "GDL-311",
+      "zona": "GDL",
+      "lat": 20.66172,
+      "lon": -103.348242,
+      "anclajes": 15
+    },
+    {
+      "id": 449,
+      "nombre": "J.D. Covarrubias / Esteban Alatorre",
+      "codigo": "GDL-312",
+      "zona": "GDL",
+      "lat": 20.681183,
+      "lon": -103.332935,
+      "anclajes": 15
+    },
+    {
+      "id": 450,
+      "nombre": "C. Manuel Doblado / C. Federación",
+      "codigo": "GDL-313",
+      "zona": "GDL",
+      "lat": 20.679471,
+      "lon": -103.331268,
+      "anclajes": 19
+    },
+    {
+      "id": 439,
+      "nombre": "C. Industria / C. Aquiles Serdán",
+      "codigo": "GDL-314",
+      "zona": "GDL",
+      "lat": 20.678909,
+      "lon": -103.327039,
+      "anclajes": 19
+    },
+    {
+      "id": 494,
+      "nombre": "J. Ortiz de Dmgz / Belisario Dmgz",
+      "codigo": "GDL-315",
+      "zona": "GDL",
+      "lat": 20.6755728,
+      "lon": -103.329125,
+      "anclajes": 19
+    },
+    {
+      "id": 451,
+      "nombre": "Emiliano Zapata / Francisco de Ayza",
+      "codigo": "GDL-316",
+      "zona": "GDL",
+      "lat": 20.6761944,
+      "lon": -103.3263889,
+      "anclajes": 19
+    },
+    {
+      "id": 452,
+      "nombre": "Emiliano Zapata / Javier Mina",
+      "codigo": "GDL-317",
+      "zona": "GDL",
+      "lat": 20.6720194,
+      "lon": -103.3279053,
+      "anclajes": 19
+    },
+    {
+      "id": 453,
+      "nombre": "C. Porfirio Díaz / C. Industria",
+      "codigo": "GDL-318",
+      "zona": "GDL",
+      "lat": 20.678184,
+      "lon": -103.321846,
+      "anclajes": 19
+    },
+    {
+      "id": 454,
+      "nombre": "Francisco de Ayza /Esteban Loera",
+      "codigo": "GDL-319",
+      "zona": "GDL",
+      "lat": 20.6763056,
+      "lon": -103.3233889,
+      "anclajes": 19
+    },
+    {
+      "id": 419,
+      "nombre": "Porfirio Díaz / Dioniso Rodríguez",
+      "codigo": "GDL-320",
+      "zona": "GDL",
+      "lat": 20.673046,
+      "lon": -103.323615,
+      "anclajes": 15
+    },
+    {
+      "id": 455,
+      "nombre": "Celestino Negrete/Francisco de Ayza",
+      "codigo": "GDL-321",
+      "zona": "GDL",
+      "lat": 20.6752347,
+      "lon": -103.3209074,
+      "anclajes": 19
+    },
+    {
+      "id": 456,
+      "nombre": "J. María Gómez /Francisco de Ayza",
+      "codigo": "GDL-322",
+      "zona": "GDL",
+      "lat": 20.6745,
+      "lon": -103.3180549,
+      "anclajes": 19
+    },
+    {
+      "id": 458,
+      "nombre": "P. Celestino Negrete / Javier Mina",
+      "codigo": "GDL-324",
+      "zona": "GDL",
+      "lat": 20.6705742,
+      "lon": -103.3224356,
+      "anclajes": 19
+    },
+    {
+      "id": 459,
+      "nombre": "D.Rodríguez / Álvarez del Castillo",
+      "codigo": "GDL-325",
+      "zona": "GDL",
+      "lat": 20.6712035,
+      "lon": -103.3181548,
+      "anclajes": 15
+    },
+    {
+      "id": 460,
+      "nombre": "J. M. Gómez / Av. Javier Mina",
+      "codigo": "GDL-326",
+      "zona": "GDL",
+      "lat": 20.6692673,
+      "lon": -103.3198691,
+      "anclajes": 15
+    },
+    {
+      "id": 461,
+      "nombre": "C. Comonfort / C. Gigantes",
+      "codigo": "GDL-327",
+      "zona": "GDL",
+      "lat": 20.6671584,
+      "lon": -103.320661,
+      "anclajes": 19
+    },
+    {
+      "id": 462,
+      "nombre": "Gral. P. M.Anaya / Basilio Vadillo",
+      "codigo": "GDL-328",
+      "zona": "GDL",
+      "lat": 20.6715181,
+      "lon": -103.3153177,
+      "anclajes": 15
+    },
+    {
+      "id": 421,
+      "nombre": "C.F. Gomez / C.J. de Dios Robledo",
+      "codigo": "GDL-330",
+      "zona": "GDL",
+      "lat": 20.669081,
+      "lon": -103.314765,
+      "anclajes": 19
+    },
+    {
+      "id": 496,
+      "nombre": "J. Ortiz de Dmgz /Sebastián Allende",
+      "codigo": "GDL-331",
+      "zona": "GDL",
+      "lat": 20.671909,
+      "lon": -103.312766,
+      "anclajes": 19
+    },
+    {
+      "id": 503,
+      "nombre": "Agustín Basave / Av. Javier Mina",
+      "codigo": "GDL-332",
+      "zona": "GDL",
+      "lat": 20.667371,
+      "lon": -103.313454,
+      "anclajes": 19
+    },
+    {
+      "id": 463,
+      "nombre": "Damian Carmona/Fco Gmz de Mendiola",
+      "codigo": "GDL-333",
+      "zona": "GDL",
+      "lat": 20.667971,
+      "lon": -103.312301,
+      "anclajes": 19
+    },
+    {
+      "id": 464,
+      "nombre": "Rivas Guillén/Ortiz de Domínguez",
+      "codigo": "GDL-334",
+      "zona": "GDL",
+      "lat": 20.6707577,
+      "lon": -103.3103972,
+      "anclajes": 19
+    },
+    {
+      "id": 465,
+      "nombre": "Dionisio Rdgz/González Bocanegra",
+      "codigo": "GDL-335",
+      "zona": "GDL",
+      "lat": 20.668794,
+      "lon": -103.310139,
+      "anclajes": 15
+    },
+    {
+      "id": 466,
+      "nombre": "G. Rivas Guillén/Álvaro Obregón",
+      "codigo": "GDL-336",
+      "zona": "GDL",
+      "lat": 20.6663056,
+      "lon": -103.3118333,
+      "anclajes": 19
+    },
+    {
+      "id": 467,
+      "nombre": "Ortiz de Domínguez/Pánfilo Pérez",
+      "codigo": "GDL-337",
+      "zona": "GDL",
+      "lat": 20.6701633,
+      "lon": -103.3067983,
+      "anclajes": 15
+    },
+    {
+      "id": 437,
+      "nombre": "C. Dionisio Rodríguez / C. F. Villa",
+      "codigo": "GDL-338",
+      "zona": "GDL",
+      "lat": 20.668265,
+      "lon": -103.308376,
+      "anclajes": 19
+    },
+    {
+      "id": 497,
+      "nombre": "Francisco Villa / Av. Javier Mina",
+      "codigo": "GDL-339",
+      "zona": "GDL",
+      "lat": 20.666435,
+      "lon": -103.3087798,
+      "anclajes": 19
+    },
+    {
+      "id": 498,
+      "nombre": "J.Ortiz de Dmgz / Felipe Ángeles",
+      "codigo": "GDL-340",
+      "zona": "GDL",
+      "lat": 20.6691158,
+      "lon": -103.3036581,
+      "anclajes": 19
+    },
+    {
+      "id": 468,
+      "nombre": "Ventura Anaya/Dionisio Rodríguez",
+      "codigo": "GDL-341",
+      "zona": "GDL",
+      "lat": 20.667559,
+      "lon": -103.305346,
+      "anclajes": 15
+    },
+    {
+      "id": 500,
+      "nombre": "F. Gómez de Mendiola /Lagunitas",
+      "codigo": "GDL-344",
+      "zona": "GDL",
+      "lat": 20.6657288,
+      "lon": -103.3003449,
+      "anclajes": 19
+    },
+    {
+      "id": 501,
+      "nombre": "Lagunitas / Av. Javier Mina",
+      "codigo": "GDL-345",
+      "zona": "GDL",
+      "lat": 20.6640781,
+      "lon": -103.3007164,
+      "anclajes": 19
+    },
+    {
+      "id": 426,
+      "nombre": "Av. Javier Mina /Av P. Elias Calles",
+      "codigo": "GDL-347",
+      "zona": "GDL",
+      "lat": 20.663757,
+      "lon": -103.297112,
+      "anclajes": 15
+    },
+    {
+      "id": 470,
+      "nombre": "Comonfort / C. Federico Medrano",
+      "codigo": "GDL-348",
+      "zona": "GDL",
+      "lat": 20.6634375,
+      "lon": -103.3219089,
+      "anclajes": 11
+    },
+    {
+      "id": 471,
+      "nombre": "C. Antonio Tello / C. Aldama",
+      "codigo": "GDL-349",
+      "zona": "GDL",
+      "lat": 20.6638611,
+      "lon": -103.3186944,
+      "anclajes": 19
+    },
+    {
+      "id": 472,
+      "nombre": "C. Artes / C. Antonio Tello",
+      "codigo": "GDL-350",
+      "zona": "GDL",
+      "lat": 20.6605556,
+      "lon": -103.3199444,
+      "anclajes": 19
+    },
+    {
+      "id": 473,
+      "nombre": "Valentín Gómez Farías / Irineo Paz",
+      "codigo": "GDL-351",
+      "zona": "GDL",
+      "lat": 20.6643611,
+      "lon": -103.3163333,
+      "anclajes": 11
+    },
+    {
+      "id": 478,
+      "nombre": "C. Francisco Márquez / C. Gigantes",
+      "codigo": "GDL-356",
+      "zona": "GDL",
+      "lat": 20.663925,
+      "lon": -103.30959,
+      "anclajes": 19
+    },
+    {
+      "id": 479,
+      "nombre": "Rosa Navarro / Federico Medrano",
+      "codigo": "GDL-358",
+      "zona": "GDL",
+      "lat": 20.6576909,
+      "lon": -103.3072265,
+      "anclajes": 19
+    },
+    {
+      "id": 480,
+      "nombre": "C. Ramón López Velarde / C. Artes",
+      "codigo": "GDL-359",
+      "zona": "GDL",
+      "lat": 20.6556182,
+      "lon": -103.3092837,
+      "anclajes": 15
+    },
+    {
+      "id": 481,
+      "nombre": "Ramón López Velarde / Antártica",
+      "codigo": "GDL-360",
+      "zona": "GDL",
+      "lat": 20.6535378,
+      "lon": -103.3096924,
+      "anclajes": 19
+    },
+    {
+      "id": 483,
+      "nombre": "Av. del Chamizal / C. San Andrés",
+      "codigo": "GDL-362",
+      "zona": "GDL",
+      "lat": 20.661901,
+      "lon": -103.3042771,
+      "anclajes": 19
+    },
+    {
+      "id": 484,
+      "nombre": "J. María Verea/J. Delgadillo Araujo",
+      "codigo": "GDL-363",
+      "zona": "GDL",
+      "lat": 20.6585684,
+      "lon": -103.3025547,
+      "anclajes": 15
+    },
+    {
+      "id": 485,
+      "nombre": "J. Delgadillo Araujo/ Medrano",
+      "codigo": "GDL-364",
+      "zona": "GDL",
+      "lat": 20.6560793,
+      "lon": -103.3032759,
+      "anclajes": 15
+    },
+    {
+      "id": 487,
+      "nombre": "C. Gutiérrez Hermosillo / C. Ejido",
+      "codigo": "GDL-366",
+      "zona": "GDL",
+      "lat": 20.6504065,
+      "lon": -103.3073301,
+      "anclajes": 19
+    },
+    {
+      "id": 142,
+      "nombre": "BlvrdGarcía Barragán/C. Río Tajo",
+      "codigo": "TLQ-001",
+      "zona": "TLQ",
+      "lat": 20.64483,
+      "lon": -103.31948,
+      "anclajes": 19
+    },
+    {
+      "id": 143,
+      "nombre": "C. Juárez / Av. Niños Héroes",
+      "codigo": "TLQ-002",
+      "zona": "TLQ",
+      "lat": 20.6383352,
+      "lon": -103.3163317,
+      "anclajes": 15
+    },
+    {
+      "id": 144,
+      "nombre": "C. Contreras Medellín/Donato Guerra",
+      "codigo": "TLQ-003",
+      "zona": "TLQ",
+      "lat": 20.64193,
+      "lon": -103.31366,
+      "anclajes": 15
+    },
+    {
+      "id": 145,
+      "nombre": "C. Donato Guerra / C. Obregón",
+      "codigo": "TLQ-004",
+      "zona": "TLQ",
+      "lat": 20.64185,
+      "lon": -103.3106,
+      "anclajes": 15
+    },
+    {
+      "id": 146,
+      "nombre": "C. Zalatitán / C. Jalisco",
+      "codigo": "TLQ-005",
+      "zona": "TLQ",
+      "lat": 20.64188,
+      "lon": -103.30651,
+      "anclajes": 15
+    },
+    {
+      "id": 251,
+      "nombre": "C. Miguel Hidalgo / Calz. Revolució",
+      "codigo": "TLQ-006",
+      "zona": "TLQ",
+      "lat": 20.639042,
+      "lon": -103.301239,
+      "anclajes": 15
+    },
+    {
+      "id": 148,
+      "nombre": "Blvrd.García Barragán/Donato Guerra",
+      "codigo": "TLQ-007",
+      "zona": "TLQ",
+      "lat": 20.64176,
+      "lon": -103.31716,
+      "anclajes": 15
+    },
+    {
+      "id": 302,
+      "nombre": "C. Independencia / C. Allende",
+      "codigo": "TLQ-008",
+      "zona": "TLQ",
+      "lat": 20.639187,
+      "lon": -103.3086,
+      "anclajes": 15
+    },
+    {
+      "id": 150,
+      "nombre": "C. Progreso / C. Juárez",
+      "codigo": "TLQ-009",
+      "zona": "TLQ",
+      "lat": 20.63816,
+      "lon": -103.31148,
+      "anclajes": 15
+    },
+    {
+      "id": 151,
+      "nombre": "C. Zaragoza / C. Emilio Carranza",
+      "codigo": "TLQ-010",
+      "zona": "TLQ",
+      "lat": 20.63834,
+      "lon": -103.30952,
+      "anclajes": 15
+    },
+    {
+      "id": 152,
+      "nombre": "C. Jalisco / C. Hidalgo",
+      "codigo": "TLQ-011",
+      "zona": "TLQ",
+      "lat": 20.63922,
+      "lon": -103.30465,
+      "anclajes": 15
+    },
+    {
+      "id": 153,
+      "nombre": "C. Paseo Don Bosco / C. Tonalá",
+      "codigo": "TLQ-012",
+      "zona": "TLQ",
+      "lat": 20.63613,
+      "lon": -103.3019,
+      "anclajes": 15
+    },
+    {
+      "id": 380,
+      "nombre": "Zalatitan/Francisco Silva Romero",
+      "codigo": "TLQ-013",
+      "zona": "TLQ",
+      "lat": 20.64181306,
+      "lon": -103.3027294,
+      "anclajes": 15
+    },
+    {
+      "id": 378,
+      "nombre": "C. Hornos / C. Francisco I. Madero",
+      "codigo": "TLQ-014",
+      "zona": "TLQ",
+      "lat": 20.64424417,
+      "lon": -103.3114337,
+      "anclajes": 15
+    },
+    {
+      "id": 362,
+      "nombre": "Contreras Medellín / Niños Héroes",
+      "codigo": "TLQ-015",
+      "zona": "TLQ",
+      "lat": 20.64422441,
+      "lon": -103.3136955,
+      "anclajes": 15
+    },
+    {
+      "id": 91,
+      "nombre": "Emilio Carranza /Carretera Tesistán",
+      "codigo": "ZPN-001",
+      "zona": "ZPN",
+      "lat": 20.73264394,
+      "lon": -103.3963456,
+      "anclajes": 15
+    },
+    {
+      "id": 92,
+      "nombre": "C. Emilio Carranza /C. Independenci",
+      "codigo": "ZPN-002",
+      "zona": "ZPN",
+      "lat": 20.72632293,
+      "lon": -103.3976201,
+      "anclajes": 11
+    },
+    {
+      "id": 93,
+      "nombre": "C. Emilio Carranza / Av. Hidalgo",
+      "codigo": "ZPN-003",
+      "zona": "ZPN",
+      "lat": 20.723081,
+      "lon": -103.398071,
+      "anclajes": 11
+    },
+    {
+      "id": 95,
+      "nombre": "C. Del Corral / C. Anáhuac",
+      "codigo": "ZPN-005",
+      "zona": "ZPN",
+      "lat": 20.730841,
+      "lon": -103.394267,
+      "anclajes": 11
+    },
+    {
+      "id": 96,
+      "nombre": "C. Sta. Rita / Av. Avila Camacho",
+      "codigo": "ZPN-006",
+      "zona": "ZPN",
+      "lat": 20.71953,
+      "lon": -103.386768,
+      "anclajes": 15
+    },
+    {
+      "id": 98,
+      "nombre": "C. Vicente Guerrero / Av. Hidalgo",
+      "codigo": "ZPN-008",
+      "zona": "ZPN",
+      "lat": 20.72201,
+      "lon": -103.39427,
+      "anclajes": 19
+    },
+    {
+      "id": 100,
+      "nombre": "C. Ramón Corona / C. Cuauhtémoc",
+      "codigo": "ZPN-010",
+      "zona": "ZPN",
+      "lat": 20.723889,
+      "lon": -103.394585,
+      "anclajes": 11
+    },
+    {
+      "id": 101,
+      "nombre": "C. Pino Suárez / C. López Cotilla",
+      "codigo": "ZPN-011",
+      "zona": "ZPN",
+      "lat": 20.726558,
+      "lon": -103.389242,
+      "anclajes": 11
+    },
+    {
+      "id": 102,
+      "nombre": "C. Pino Suárez / Av. Juan Pablo II",
+      "codigo": "ZPN-012",
+      "zona": "ZPN",
+      "lat": 20.728538,
+      "lon": -103.390297,
+      "anclajes": 19
+    },
+    {
+      "id": 103,
+      "nombre": "C. Eva Briseño / C. Javier Mina",
+      "codigo": "ZPN-013",
+      "zona": "ZPN",
+      "lat": 20.720438,
+      "lon": -103.391894,
+      "anclajes": 15
+    },
+    {
+      "id": 389,
+      "nombre": "Av. D / San Jorge",
+      "codigo": "ZPN-014",
+      "zona": "ZPN",
+      "lat": 20.7184878,
+      "lon": -103.3743249,
+      "anclajes": 15
+    },
+    {
+      "id": 105,
+      "nombre": "Blvr. de la Espuela / Blvr. Charros",
+      "codigo": "ZPN-015",
+      "zona": "ZPN",
+      "lat": 20.735255,
+      "lon": -103.394636,
+      "anclajes": 11
+    },
+    {
+      "id": 106,
+      "nombre": "Av. Hidalgo/ C. Emiliano Zapata",
+      "codigo": "ZPN-016",
+      "zona": "ZPN",
+      "lat": 20.721643,
+      "lon": -103.3902,
+      "anclajes": 19
+    },
+    {
+      "id": 107,
+      "nombre": "C. Juan Manuel / C. Pedro Moreno",
+      "codigo": "ZPN-017",
+      "zona": "ZPN",
+      "lat": 20.72374,
+      "lon": -103.388657,
+      "anclajes": 15
+    },
+    {
+      "id": 108,
+      "nombre": "Av. Laureles / Blvrd. Panamericano",
+      "codigo": "ZPN-018",
+      "zona": "ZPN",
+      "lat": 20.7276186,
+      "lon": -103.3859946,
+      "anclajes": 23
+    },
+    {
+      "id": 110,
+      "nombre": "Av. Aurelio Ortega / Av. Laureles",
+      "codigo": "ZPN-020",
+      "zona": "ZPN",
+      "lat": 20.720987,
+      "lon": -103.38625,
+      "anclajes": 15
+    },
+    {
+      "id": 111,
+      "nombre": "Blvrd. Panamericano/ C.Santa Mónica",
+      "codigo": "ZPN-021",
+      "zona": "ZPN",
+      "lat": 20.728243,
+      "lon": -103.384072,
+      "anclajes": 15
+    },
+    {
+      "id": 112,
+      "nombre": "Av. Aurelio Ortega / C. Morelos",
+      "codigo": "ZPN-022",
+      "zona": "ZPN",
+      "lat": 20.722427,
+      "lon": -103.383,
+      "anclajes": 15
+    },
+    {
+      "id": 286,
+      "nombre": "Blvrd. de la Espuela / C. Silvano B",
+      "codigo": "ZPN-023",
+      "zona": "ZPN",
+      "lat": 20.73231,
+      "lon": -103.38763,
+      "anclajes": 15
+    },
+    {
+      "id": 287,
+      "nombre": "C. Francisco Sarabia / Av. Laureles",
+      "codigo": "ZPN-024",
+      "zona": "ZPN",
+      "lat": 20.73445,
+      "lon": -103.3985614,
+      "anclajes": 15
+    },
+    {
+      "id": 115,
+      "nombre": "Av. V. Carranza / Av. Jose Simeon",
+      "codigo": "ZPN-025",
+      "zona": "ZPN",
+      "lat": 20.731202,
+      "lon": -103.380651,
+      "anclajes": 15
+    },
+    {
+      "id": 117,
+      "nombre": "C. 5 de Mayo / C. Noviembre",
+      "codigo": "ZPN-027",
+      "zona": "ZPN",
+      "lat": 20.720452,
+      "lon": -103.388629,
+      "anclajes": 11
+    },
+    {
+      "id": 118,
+      "nombre": "Av. F. Aranguren / Av. Laureles",
+      "codigo": "ZPN-028",
+      "zona": "ZPN",
+      "lat": 20.737087,
+      "lon": -103.401285,
+      "anclajes": 23
+    },
+    {
+      "id": 119,
+      "nombre": "C. La Villa / C. Cuauhtémoc",
+      "codigo": "ZPN-029",
+      "zona": "ZPN",
+      "lat": 20.728147,
+      "lon": -103.393858,
+      "anclajes": 15
+    },
+    {
+      "id": 120,
+      "nombre": "Av.Juan Pablo II / Lázaro Cárdenas",
+      "codigo": "ZPN-030",
+      "zona": "ZPN",
+      "lat": 20.736557,
+      "lon": -103.401357,
+      "anclajes": 15
+    },
+    {
+      "id": 125,
+      "nombre": "C. Niño Obrero/Calz Lázaro Cárdenas",
+      "codigo": "ZPN-031",
+      "zona": "ZPN",
+      "lat": 20.67342,
+      "lon": -103.40945,
+      "anclajes": 19
+    },
+    {
+      "id": 126,
+      "nombre": "Calz Lázaro Cárdenas / Av San Fco",
+      "codigo": "ZPN-032",
+      "zona": "ZPN",
+      "lat": 20.67195,
+      "lon": -103.40641,
+      "anclajes": 19
+    },
+    {
+      "id": 127,
+      "nombre": "Av Lázaro Cárdenas / Av San Ignacio",
+      "codigo": "ZPN-033",
+      "zona": "ZPN",
+      "lat": 20.6707,
+      "lon": -103.40458,
+      "anclajes": 15
+    },
+    {
+      "id": 128,
+      "nombre": "C. San Demetrio / C. Niño Obrero",
+      "codigo": "ZPN-034",
+      "zona": "ZPN",
+      "lat": 20.66984,
+      "lon": -103.40968,
+      "anclajes": 15
+    },
+    {
+      "id": 129,
+      "nombre": "C. San Juan Bosco / Av. San Ignacio",
+      "codigo": "ZPN-035",
+      "zona": "ZPN",
+      "lat": 20.66844,
+      "lon": -103.40495,
+      "anclajes": 11
+    },
+    {
+      "id": 130,
+      "nombre": "C. Niño Obrero /C José María Robles",
+      "codigo": "ZPN-036",
+      "zona": "ZPN",
+      "lat": 20.66731,
+      "lon": -103.40953,
+      "anclajes": 19
+    },
+    {
+      "id": 131,
+      "nombre": "Av. San Ignacio / Av. Guadalupe",
+      "codigo": "ZPN-037",
+      "zona": "ZPN",
+      "lat": 20.666914,
+      "lon": -103.402512,
+      "anclajes": 11
+    },
+    {
+      "id": 132,
+      "nombre": "C. Santa Rita / Av. Guadalupe",
+      "codigo": "ZPN-038",
+      "zona": "ZPN",
+      "lat": 20.666033,
+      "lon": -103.40687,
+      "anclajes": 11
+    },
+    {
+      "id": 133,
+      "nombre": "Av. Niño Obrero / C. Juan Diego",
+      "codigo": "ZPN-039",
+      "zona": "ZPN",
+      "lat": 20.66312806,
+      "lon": -103.4079076,
+      "anclajes": 19
+    },
+    {
+      "id": 134,
+      "nombre": "C. Santa María / C. Árbol",
+      "codigo": "ZPN-040",
+      "zona": "ZPN",
+      "lat": 20.66033761,
+      "lon": -103.4037559,
+      "anclajes": 15
+    },
+    {
+      "id": 135,
+      "nombre": "C. 12 de Diciembre / C. Juan Diego",
+      "codigo": "ZPN-041",
+      "zona": "ZPN",
+      "lat": 20.66463,
+      "lon": -103.404,
+      "anclajes": 11
+    },
+    {
+      "id": 136,
+      "nombre": "C. Tonatiuh / Av. Netzahualcóyotl",
+      "codigo": "ZPN-042",
+      "zona": "ZPN",
+      "lat": 20.65925105,
+      "lon": -103.4065612,
+      "anclajes": 15
+    },
+    {
+      "id": 137,
+      "nombre": "C. Ermita / C. Del Árbol",
+      "codigo": "ZPN-043",
+      "zona": "ZPN",
+      "lat": 20.65938,
+      "lon": -103.40195,
+      "anclajes": 11
+    },
+    {
+      "id": 139,
+      "nombre": "Av. Tizoc / C. Iztaccíhuatl",
+      "codigo": "ZPN-045",
+      "zona": "ZPN",
+      "lat": 20.65701,
+      "lon": -103.40464,
+      "anclajes": 15
+    },
+    {
+      "id": 140,
+      "nombre": "Av. Cubilete / Av. López Mateos",
+      "codigo": "ZPN-046",
+      "zona": "ZPN",
+      "lat": 20.65688474,
+      "lon": -103.3978388,
+      "anclajes": 19
+    },
+    {
+      "id": 288,
+      "nombre": "Av. J. Parres Arias / Prol. López C",
+      "codigo": "ZPN-048",
+      "zona": "ZPN",
+      "lat": 20.72958,
+      "lon": -103.38859,
+      "anclajes": 31
+    },
+    {
+      "id": 289,
+      "nombre": "Ávila Camacho/ Lábaro Patrio",
+      "codigo": "ZPN-049",
+      "zona": "ZPN",
+      "lat": 20.7178,
+      "lon": -103.38338,
+      "anclajes": 15
+    },
+    {
+      "id": 290,
+      "nombre": "C. el Mediero / Prol. Laureles",
+      "codigo": "ZPN-050",
+      "zona": "ZPN",
+      "lat": 20.73432,
+      "lon": -103.38427,
+      "anclajes": 15
+    },
+    {
+      "id": 291,
+      "nombre": "Av. Periférico G. Morín / Av. J. Pa",
+      "codigo": "ZPN-051",
+      "zona": "ZPN",
+      "lat": 20.73837,
+      "lon": -103.38057,
+      "anclajes": 31
+    },
+    {
+      "id": 292,
+      "nombre": "C. del Pial / C. del Vigía",
+      "codigo": "ZPN-052",
+      "zona": "ZPN",
+      "lat": 20.73245,
+      "lon": -103.39291,
+      "anclajes": 15
+    },
+    {
+      "id": 293,
+      "nombre": "Prol. Laureles / Av. Periférico G.",
+      "codigo": "ZPN-053",
+      "zona": "ZPN",
+      "lat": 20.73836,
+      "lon": -103.38299,
+      "anclajes": 31
+    },
+    {
+      "id": 294,
+      "nombre": "Av. J. Parres Arias / C. Ignacio Ja",
+      "codigo": "ZPN-054",
+      "zona": "ZPN",
+      "lat": 20.73441,
+      "lon": -103.38079,
+      "anclajes": 19
+    },
+    {
+      "id": 295,
+      "nombre": "Prol. Laureles / Av. J. Parres Aria",
+      "codigo": "ZPN-055",
+      "zona": "ZPN",
+      "lat": 20.73154,
+      "lon": -103.38515,
+      "anclajes": 15
+    },
+    {
+      "id": 296,
+      "nombre": "Av. M. Ávila Camacho / C. San Jorge",
+      "codigo": "ZPN-056",
+      "zona": "ZPN",
+      "lat": 20.71365,
+      "lon": -103.37742,
+      "anclajes": 15
+    },
+    {
+      "id": 313,
+      "nombre": "C. Escultores / Av. Guadalupe",
+      "codigo": "ZPN-057",
+      "zona": "ZPN",
+      "lat": 20.6637066,
+      "lon": -103.4178168,
+      "anclajes": 15
+    },
+    {
+      "id": 319,
+      "nombre": "Av. Labna / Av. Tepeyac",
+      "codigo": "ZPN-058",
+      "zona": "ZPN",
+      "lat": 20.656551,
+      "lon": -103.4194212,
+      "anclajes": 19
+    },
+    {
+      "id": 320,
+      "nombre": "C. Prados los Pinos/ Av. Tepeyac",
+      "codigo": "ZPN-059",
+      "zona": "ZPN",
+      "lat": 20.6579741,
+      "lon": -103.4173432,
+      "anclajes": 15
+    },
+    {
+      "id": 316,
+      "nombre": "C. De Los Leones / Av. Tepeyac",
+      "codigo": "ZPN-060",
+      "zona": "ZPN",
+      "lat": 20.6587944,
+      "lon": -103.41456,
+      "anclajes": 19
+    },
+    {
+      "id": 315,
+      "nombre": "C. Organización / Av. Guadalupe",
+      "codigo": "ZPN-061",
+      "zona": "ZPN",
+      "lat": 20.6638448,
+      "lon": -103.4151424,
+      "anclajes": 19
+    },
+    {
+      "id": 314,
+      "nombre": "C. Loyola / C. Organización",
+      "codigo": "ZPN-062",
+      "zona": "ZPN",
+      "lat": 20.6604258,
+      "lon": -103.4136351,
+      "anclajes": 15
+    },
+    {
+      "id": 390,
+      "nombre": "Paulino Navarro/Ma del Refugio Puga",
+      "codigo": "ZPN-063",
+      "zona": "ZPN",
+      "lat": 20.72298736,
+      "lon": -103.3733325,
+      "anclajes": 19
+    },
+    {
+      "id": 309,
+      "nombre": "C. Sto de Aquino / Av. Sta Teresa",
+      "codigo": "ZPN-064",
+      "zona": "ZPN",
+      "lat": 20.6669929,
+      "lon": -103.4133282,
+      "anclajes": 15
+    },
+    {
+      "id": 308,
+      "nombre": "C. Del Carmen / Av. Guadalupe",
+      "codigo": "ZPN-065",
+      "zona": "ZPN",
+      "lat": 20.6649061,
+      "lon": -103.4109615,
+      "anclajes": 19
+    },
+    {
+      "id": 306,
+      "nombre": "C. Cuauhtémoc / Av. Tepeyac",
+      "codigo": "ZPN-066",
+      "zona": "ZPN",
+      "lat": 20.660955,
+      "lon": -103.408683,
+      "anclajes": 19
+    },
+    {
+      "id": 312,
+      "nombre": "C. Chimalhuacán / Av. López Mateos",
+      "codigo": "ZPN-067",
+      "zona": "ZPN",
+      "lat": 20.6515919,
+      "lon": -103.4027691,
+      "anclajes": 19
+    },
+    {
+      "id": 339,
+      "nombre": "Francisco Mora / Aurelio Ortega",
+      "codigo": "ZPN-068",
+      "zona": "ZPN",
+      "lat": 20.72249627,
+      "lon": -103.3800223,
+      "anclajes": 15
+    },
+    {
+      "id": 340,
+      "nombre": "Jesús María Romo /Av. Aurelio Ortega",
+      "codigo": "ZPN-069",
+      "zona": "ZPN",
+      "lat": 20.72229883,
+      "lon": -103.3767978,
+      "anclajes": 19
+    },
+    {
+      "id": 341,
+      "nombre": "Av. Avila Camacho / Av. Patria",
+      "codigo": "ZPN-070",
+      "zona": "ZPN",
+      "lat": 20.71272432,
+      "lon": -103.3754277,
+      "anclajes": 19
+    },
+    {
+      "id": 351,
+      "nombre": "Av. San Ignacio / Av. Vallarta",
+      "codigo": "ZPN-071",
+      "zona": "ZPN",
+      "lat": 20.67459513,
+      "lon": -103.403227,
+      "anclajes": 19
+    },
+    {
+      "id": 352,
+      "nombre": "Av. San Francisco / Av. San Ignacio",
+      "codigo": "ZPN-072",
+      "zona": "ZPN",
+      "lat": 20.67263879,
+      "lon": -103.404018,
+      "anclajes": 19
+    },
+    {
+      "id": 342,
+      "nombre": "C. Pintores/ Av. Jose Luis Gonzaga",
+      "codigo": "ZPN-073",
+      "zona": "ZPN",
+      "lat": 20.66518152,
+      "lon": -103.4192211,
+      "anclajes": 15
+    },
+    {
+      "id": 343,
+      "nombre": "C. Doctores / Av. San Luis Gonzaga",
+      "codigo": "ZPN-074",
+      "zona": "ZPN",
+      "lat": 20.66459936,
+      "lon": -103.4230589,
+      "anclajes": 19
+    },
+    {
+      "id": 345,
+      "nombre": "C. Arquitectos / Av. Guadalupe",
+      "codigo": "ZPN-075",
+      "zona": "ZPN",
+      "lat": 20.66234421,
+      "lon": -103.4247637,
+      "anclajes": 15
+    },
+    {
+      "id": 344,
+      "nombre": "C. Pintores / Av. Guadalupe",
+      "codigo": "ZPN-076",
+      "zona": "ZPN",
+      "lat": 20.66256932,
+      "lon": -103.4203018,
+      "anclajes": 15
+    },
+    {
+      "id": 394,
+      "nombre": "Helios / Av. Tepeyac",
+      "codigo": "ZPN-077",
+      "zona": "ZPN",
+      "lat": 20.65577498,
+      "lon": -103.4218768,
+      "anclajes": 15
+    },
+    {
+      "id": 391,
+      "nombre": "Lago Constanza / San Jorge",
+      "codigo": "ZPN-078",
+      "zona": "ZPN",
+      "lat": 20.7148556,
+      "lon": -103.3751169,
+      "anclajes": 19
+    },
+    {
+      "id": 401,
+      "nombre": "Av. Coyoacan / C. Chimalpopoca",
+      "codigo": "ZPN-079",
+      "zona": "ZPN",
+      "lat": 20.6529581,
+      "lon": -103.4047666,
+      "anclajes": 15
+    },
+    {
+      "id": 402,
+      "nombre": "Av. Moctezuma / Av. Netzahualcóyotl",
+      "codigo": "ZPN-080",
+      "zona": "ZPN",
+      "lat": 20.65077139,
+      "lon": -103.4063754,
+      "anclajes": 19
+    },
+    {
+      "id": 424,
+      "nombre": "Cedros / Av. Moctezuma",
+      "codigo": "ZPN-081",
+      "zona": "ZPN",
+      "lat": 20.650555,
+      "lon": -103.409953,
+      "anclajes": 19
+    },
+    {
+      "id": 427,
+      "nombre": "Av. Clouthier / C. Felipe Carrillo",
+      "codigo": "ZPN-082",
+      "zona": "ZPN",
+      "lat": 20.6477711,
+      "lon": -103.4275447,
+      "anclajes": 17
+    },
+    {
+      "id": 488,
+      "nombre": "C. Playa de Hornos / C. Playa Oro",
+      "codigo": "ZPN-083",
+      "zona": "ZPN",
+      "lat": 20.648378,
+      "lon": -103.430617,
+      "anclajes": 11
+    },
+    {
+      "id": 444,
+      "nombre": "Av. Clouthier / Av. Moctezuma",
+      "codigo": "ZPN-084",
+      "zona": "ZPN",
+      "lat": 20.6500444,
+      "lon": -103.4264349,
+      "anclajes": 19
+    },
+    {
+      "id": 435,
+      "nombre": "Av. San Luis G. / C. San Antonio",
+      "codigo": "ZPN-085",
+      "zona": "ZPN",
+      "lat": 20.66546,
+      "lon": -103.414459,
+      "anclajes": 19
+    },
+    {
+      "id": 434,
+      "nombre": "C. Tulum / Av. Labna",
+      "codigo": "ZPN-086",
+      "zona": "ZPN",
+      "lat": 20.653517,
+      "lon": -103.41844,
+      "anclajes": 19
+    },
+    {
+      "id": 425,
+      "nombre": "G.Haendel / Sto Tomas de Aquino",
+      "codigo": "ZPN-087",
+      "zona": "ZPN",
+      "lat": 20.667084,
+      "lon": -103.420433,
+      "anclajes": 15
+    },
+    {
+      "id": 433,
+      "nombre": "C. Arquitectos/Av. San Luis Gonzaga",
+      "codigo": "ZPN-089",
+      "zona": "ZPN",
+      "lat": 20.664611,
+      "lon": -103.425,
+      "anclajes": 19
+    },
+    {
+      "id": 431,
+      "nombre": "Av. Toreros / Av.Luis Gonzaga",
+      "codigo": "ZPN-090",
+      "zona": "ZPN",
+      "lat": 20.664047,
+      "lon": -103.428736,
+      "anclajes": 19
+    },
+    {
+      "id": 430,
+      "nombre": "Av. Toreros Sur / Av. Guadalupe",
+      "codigo": "ZPN-091",
+      "zona": "ZPN",
+      "lat": 20.661357,
+      "lon": -103.428244,
+      "anclajes": 19
+    },
+    {
+      "id": 489,
+      "nombre": "Guadalupe / UERE Pasaportes-Zapopan",
+      "codigo": "ZPN-092",
+      "zona": "ZPN",
+      "lat": 20.658884,
+      "lon": -103.433215,
+      "anclajes": 11
+    },
+    {
+      "id": 423,
+      "nombre": "/Boulevard panamericano",
+      "codigo": "ZPN-093",
+      "zona": "ZPN",
+      "lat": 20.727722,
+      "lon": -103.382721,
+      "anclajes": 23
+    },
+    {
+      "id": 511,
+      "nombre": "Av. V. el Colli / C. V. Paricutín",
+      "codigo": "ZPN-094",
+      "zona": "ZPN",
+      "lat": 20.6421441,
+      "lon": -103.4299111,
+      "anclajes": 19
+    },
+    {
+      "id": 420,
+      "nombre": "Lateral Periférico/ CUCEA",
+      "codigo": "ZPN-095",
+      "zona": "ZPN",
+      "lat": 20.739523,
+      "lon": -103.381326,
+      "anclajes": 19
+    },
+    {
+      "id": 436,
+      "nombre": "Lat.Perif. / Exp. Constitución",
+      "codigo": "ZPN-096",
+      "zona": "ZPN",
+      "lat": 20.738009,
+      "lon": -103.377227,
+      "anclajes": 19
+    },
+    {
+      "id": 504,
+      "nombre": "Prol. Arquitectos Sur/ Av. Tepeyac",
+      "codigo": "ZPN-097",
+      "zona": "ZPN",
+      "lat": 20.655345,
+      "lon": -103.425162,
+      "anclajes": 19
+    },
+    {
+      "id": 505,
+      "nombre": "Playa de Hornos / Av. Tepeyac",
+      "codigo": "ZPN-098",
+      "zona": "ZPN",
+      "lat": 20.654377,
+      "lon": -103.428041,
+      "anclajes": 19
+    },
+    {
+      "id": 508,
+      "nombre": "C. Playa Olas / Av. El Colli",
+      "codigo": "ZPN-099",
+      "zona": "ZPN",
+      "lat": 20.6469616,
+      "lon": -103.4316475,
+      "anclajes": 19
+    },
+    {
+      "id": 509,
+      "nombre": "C. Popocatépetl / C. Volcán Barú",
+      "codigo": "ZPN-100",
+      "zona": "ZPN",
+      "lat": 20.643779,
+      "lon": -103.4326332,
+      "anclajes": 15
+    },
+    {
+      "id": 510,
+      "nombre": "C. Volcán del Colli/V. del Ajusco",
+      "codigo": "ZPN-102",
+      "zona": "ZPN",
+      "lat": 20.6442292,
+      "lon": -103.4288278,
+      "anclajes": 15
+    },
+    {
+      "id": 104,
+      "nombre": "Av. D / C. 9",
+      "codigo": "ZPN-104",
+      "zona": "ZPN",
+      "lat": 20.718288,
+      "lon": -103.371795,
+      "anclajes": 19
+    }
+  ]
+}
