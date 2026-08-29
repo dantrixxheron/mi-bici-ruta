@@ -21,8 +21,9 @@
  */
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { dirname, resolve } from 'node:path';
 import { haversineM } from '../src/servicios/geo';
+import { CACHE_MATRIZ as CACHE, ESTACIONES_JSON as ENTRADA, GRAFO_JSON as SALIDA } from './rutas';
 import {
   FACTOR_RODEO,
   RADIO_PREFILTRO_M,
@@ -36,11 +37,6 @@ import type {
   AristaCompacta,
   Estacion,
 } from '../src/dominio/tipos';
-
-const RAIZ = resolve(import.meta.dirname, '..');
-const ENTRADA = resolve(RAIZ, 'data/estaciones.json');
-const SALIDA = resolve(RAIZ, 'data/grafo.json');
-const CACHE = resolve(RAIZ, 'data/.cache-matriz');
 
 const PERFIL = 'cycling-regular';
 
@@ -275,6 +271,7 @@ async function main(): Promise<void> {
     aristas,
   };
 
+  mkdirSync(dirname(SALIDA), { recursive: true });
   writeFileSync(SALIDA, JSON.stringify(grafo), 'utf8');
 
   const bytes = readFileSync(SALIDA).length;

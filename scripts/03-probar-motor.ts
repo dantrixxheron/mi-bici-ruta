@@ -12,7 +12,7 @@
  */
 
 import { readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { ESTACIONES_JSON, GRAFO_JSON } from './rutas';
 import { prepararContexto, planificar } from '../src/dominio/planificador';
 import { haversineM } from '../src/servicios/geo';
 import {
@@ -23,12 +23,8 @@ import {
 } from '../src/dominio/constantes';
 import type { ArchivoEstaciones, ArchivoGrafo, Punto } from '../src/dominio/tipos';
 
-const RAIZ = resolve(import.meta.dirname, '..');
-
-const estacionesArchivo = JSON.parse(
-  readFileSync(resolve(RAIZ, 'data/estaciones.json'), 'utf8'),
-) as ArchivoEstaciones;
-const grafo = JSON.parse(readFileSync(resolve(RAIZ, 'data/grafo.json'), 'utf8')) as ArchivoGrafo;
+const estacionesArchivo = JSON.parse(readFileSync(ESTACIONES_JSON, 'utf8')) as ArchivoEstaciones;
+const grafo = JSON.parse(readFileSync(GRAFO_JSON, 'utf8')) as ArchivoGrafo;
 
 const contexto = prepararContexto(estacionesArchivo.estaciones, grafo);
 

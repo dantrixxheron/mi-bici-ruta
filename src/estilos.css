@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+@import 'leaflet/dist/leaflet.css';
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Leaflet fija su propio z-index alto; se baja para que la hoja
+   deslizable y el encabezado queden por encima del mapa. */
+.leaflet-container {
+  z-index: 0;
+  background: #e5e7eb;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+}
+
+/* Chincheta de origen / destino, dibujada con divIcon para no depender
+   de los PNG de Leaflet, que se rompen con los empaquetadores. */
+.pin {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.35);
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.pin-origen {
+  background: #0f766e;
+}
+
+.pin-destino {
+  background: #b91c1c;
+}
+
+.pin-parada {
+  background: #b45309;
+}

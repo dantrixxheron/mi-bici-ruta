@@ -21,16 +21,27 @@ export default defineConfig({
         start_url: '/',
         lang: 'es-MX',
         icons: [
-          { src: 'icono-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icono-512.png', sizes: '512x512', type: 'image/png' },
+          { src: 'favicon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' },
         ],
       },
       workbox: {
-        // Las teselas de OSM se cachean para que una ruta ya consultada
-        // siga siendo legible sin conexión (historia H9).
+        // Los datos NO se precachean: precargar grafo.json en la instalación
+        // del service worker lo descargaría dos veces y anularía la carga
+        // diferida. Se cachean cuando la app realmente los pide.
+        globIgnores: ['**/datos/**'],
         runtimeCaching: [
           {
-            urlPattern: /^https:\/\/[abc]\.tile\.openstreetmap\.org\/.*/i,
+            urlPattern: /\/datos\/.*\.json$/i,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'datos-miruta',
+              expiration: { maxEntries: 8, maxAgeSeconds: 60 * 60 * 24 * 30 },
+            },
+          },
+          {
+            // Teselas cacheadas para que una ruta ya consultada siga siendo
+            // legible sin conexión (historia H9).
+            urlPattern: /^https:\/\/tile\.openstreetmap\.org\/.*/i,
             handler: 'CacheFirst',
             options: {
               cacheName: 'teselas-osm',

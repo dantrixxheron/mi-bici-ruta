@@ -20,9 +20,8 @@
 
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { ESTACIONES_JSON, RAIZ } from './rutas';
 import type { ArchivoEstaciones } from '../src/dominio/tipos';
-
-const RAIZ = resolve(import.meta.dirname, '..');
 
 const HOST_NUEVO = 'https://api.heigit.org/openrouteservice';
 const HOST_VIEJO = 'https://api.openrouteservice.org';
@@ -49,7 +48,7 @@ function leerLlave(): string {
 const llave = leerLlave();
 
 const estaciones = (
-  JSON.parse(readFileSync(resolve(RAIZ, 'data/estaciones.json'), 'utf8')) as ArchivoEstaciones
+  JSON.parse(readFileSync(ESTACIONES_JSON, 'utf8')) as ArchivoEstaciones
 ).estaciones.slice(0, 3);
 
 const coordenadas = estaciones.map((e) => [e.lon, e.lat]);

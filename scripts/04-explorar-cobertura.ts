@@ -5,15 +5,12 @@
  */
 
 import { readFileSync } from 'node:fs';
-import { resolve } from 'node:path';
 import { haversineM, masCercana } from '../src/servicios/geo';
 import { RADIO_CAMINATA_M } from '../src/dominio/constantes';
+import { ESTACIONES_JSON } from './rutas';
 import type { ArchivoEstaciones } from '../src/dominio/tipos';
 
-const RAIZ = resolve(import.meta.dirname, '..');
-const archivo = JSON.parse(
-  readFileSync(resolve(RAIZ, 'data/estaciones.json'), 'utf8'),
-) as ArchivoEstaciones;
+const archivo = JSON.parse(readFileSync(ESTACIONES_JSON, 'utf8')) as ArchivoEstaciones;
 const estaciones = archivo.estaciones;
 
 const lats = estaciones.map((e) => e.lat);

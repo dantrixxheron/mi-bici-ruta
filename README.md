@@ -106,7 +106,7 @@ id,name,latitude,longitude,dpcapacity
 | Zonas presentes: `GDL`, `ZPN`, `TLQ` | No existe `ZAP` ni `TON`. Tlaquepaque tiene apenas 15 estaciones; Tonalá, ninguna |
 | Nombres con espacios dobles y a veces sin espacio tras el paréntesis | Requieren normalización antes de mostrarse |
 
-**Resultado:** 490 filas → **451 estaciones activas** (342 GDL, 94 ZPN, 15 TLQ), 39 descartadas. El `estaciones.json` resultante pesa 40 KB y se carga completo en el cliente.
+**Resultado:** 490 filas → **451 estaciones activas** (342 GDL, 94 ZPN, 15 TLQ), 39 descartadas. El `estaciones.json` resultante pesa 90 KB (~15 KB comprimido) y se carga completo en el cliente al abrir la app.
 
 ### 4.2 Cobertura real del sistema
 
@@ -166,7 +166,7 @@ Consecuencia: no hay backend, no hay base de datos, no hay latencia de red en el
 
 La respuesta no es podar el grafo sino **diferir su carga**:
 
-- La app pinta el mapa y las 451 estaciones con solo `estaciones.json` (40 KB).
+- La app pinta el mapa y las 451 estaciones con solo `estaciones.json` (90 KB).
 - `grafo.json` se descarga en segundo plano mientras el usuario elige origen y destino, cosa que toma varios segundos de todos modos.
 - Para cuando se pulsa «planear», ya está en memoria.
 
@@ -465,9 +465,9 @@ Lista explícita, para protegerla de la tentación a mitad del hackathon:
 | **2. Grafo** | 5–10 | `grafo.json` con 94 588 aristas, todas dentro de la ventana | ✅ modo respaldo |
 | **3. Motor** | 10–18 | Dijkstra + planificador + banco de pruebas | ✅ |
 | **3b. Grafo real** | — | Regenerar con OpenRouteService | ⏳ **falta llave de API** |
-| **4. Mapa** | 18–26 | Selección de origen/destino, dibujo de la ruta con tramos diferenciados | ☐ |
-| **5. Panel** | 26–34 | Itinerario, totales desglosados, márgenes, tarjetas de parada | ☐ |
-| **6. Pulido** | 34–40 | Estados de carga y error, responsive móvil, PWA, despliegue | ☐ |
+| **4. Mapa** | 18–26 | Selección de origen/destino, dibujo de la ruta con tramos diferenciados | ✅ |
+| **5. Panel** | 26–34 | Itinerario, totales desglosados, márgenes, tarjetas de parada | ✅ |
+| **6. Pulido** | 34–40 | Estados de carga y error, responsive móvil, PWA, despliegue | 🔶 falta desplegar |
 | **7. Demo** | 40–46 | Guion, 3 rutas de respaldo precalculadas, ensayo | ☐ |
 | **Colchón** | 46–48 | Lo que se rompa | ☐ |
 

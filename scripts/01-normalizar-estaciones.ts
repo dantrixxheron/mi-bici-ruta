@@ -16,13 +16,10 @@
  *   - Nombres con espacios dobles y a veces sin espacio tras el parentesis.
  */
 
-import { readFileSync, writeFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname } from 'node:path';
 import type { ArchivoEstaciones, Estacion, Zona } from '../src/dominio/tipos';
-
-const RAIZ = resolve(import.meta.dirname, '..');
-const ENTRADA = resolve(RAIZ, 'data/nomenclatura_2026_07.csv');
-const SALIDA = resolve(RAIZ, 'data/estaciones.json');
+import { CSV_NOMENCLATURA as ENTRADA, ESTACIONES_JSON as SALIDA } from './rutas';
 
 const ZONAS_VALIDAS = new Set<string>(['GDL', 'ZPN', 'TLQ']);
 
@@ -166,6 +163,7 @@ function main(): void {
     estaciones,
   };
 
+  mkdirSync(dirname(SALIDA), { recursive: true });
   writeFileSync(SALIDA, JSON.stringify(archivo, null, 2), 'utf8');
 
   const porZona = new Map<string, number>();
