@@ -35,7 +35,10 @@ type Tienda = {
   refinando: boolean;
 
   iniciar: () => Promise<void>;
+  /** Clic en el mapa: rellena el campo activo y salta al otro. */
   fijarPunto: (punto: Punto) => void;
+  /** Busqueda por texto: rellena un campo concreto, sin saltar. */
+  fijarPuntoEn: (que: QueSeElige, punto: Punto) => void;
   elegir: (que: QueSeElige) => void;
   intercambiar: () => void;
   limpiar: () => void;
@@ -131,6 +134,11 @@ export const usarTienda = create<Tienda>((set, get) => {
       } else {
         set({ destino: punto, queSeElige: 'origen' });
       }
+      replanificar();
+    },
+
+    fijarPuntoEn(que, punto) {
+      set(que === 'origen' ? { origen: punto } : { destino: punto });
       replanificar();
     },
 

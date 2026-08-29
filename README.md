@@ -22,7 +22,6 @@ Esto crea un comportamiento que los usuarios experimentados ya practican informa
 |---|---|---|---|
 | Google Maps | Sí | Parcial | No |
 | App oficial MiBici | No | Sí | No |
-| Komoot / Strava | Sí | No | No |
 | **MiRuta** | **Sí** | **Sí** | **Sí** |
 
 ### Usuario objetivo
@@ -61,7 +60,7 @@ Todo lo demás es secundario y está explícitamente fuera de alcance para la pr
 | H4 | Ver dónde debo re-anclar la bici y volver a tomar otra | No pasarme de los 30 minutos | **Debe** |
 | H5 | Ver el tiempo y distancia totales, desglosados en caminata y bici | Decidir si me conviene el trayecto | **Debe** |
 | H6 | Ver el tiempo de cada tramo con margen respecto a los 30 min | Confiar en que no me van a cobrar | **Debe** |
-| H7 | Buscar una dirección por texto | Planear sin conocer el mapa | Debería |
+| H7 | Buscar una dirección por texto | Planear sin conocer el mapa | Debería — ✅ hecha (§4.5) |
 | H8 | Instalar la app en mi teléfono | Abrirla rápido | Debería |
 | H9 | Consultar una ruta ya calculada sin conexión | Usarla en la calle sin datos | Podría |
 
@@ -151,6 +150,30 @@ Se usan dos perfiles:
 | `foot-walking` | Tramo inicial origen → estación y final estación → destino |
 
 Se eligió sobre OSRM público porque el servidor demo de OSRM solo expone perfil de automóvil, y sobre OSRM auto-hospedado porque descargar y procesar el extracto de Jalisco con Docker consume varias horas del presupuesto de 48.
+
+> **Migración a HeiGIT.** OpenRouteService movió su infraestructura: `api.openrouteservice.org` quedó deprecado el 28-abr-2026, su cuota bajó al 10 % el 27-ago-2026 y **se apaga el 28-sep-2026**. Todas las llamadas van a `https://api.heigit.org/openrouteservice/v2/…`. La URL base es configurable con `ORS_BASE_URL`. Las llaves nuevas tienen forma de JWT; `npm run probar:ors` valida la llave con 2 peticiones antes de gastar ~100 construyendo la matriz.
+
+### 4.5 Búsqueda por texto (geocodificación)
+
+**Decisión: Photon, no el geocodificador de OpenRouteService.**
+
+ORS también ofrece geocodificación, pero exige la misma llave que el resto de sus servicios. Usarla habría dejado la búsqueda bloqueada esperando aprobación, cuando es justamente la función que vuelve usable la app sin conocer el mapa. [Photon](https://photon.komoot.io/) es gratuito, **no requiere llave**, y está diseñado para type-ahead.
+
+La búsqueda combina dos fuentes, y esa combinación es deliberada:
+
+| Fuente | Qué cubre | Latencia | Si falla |
+|---|---|---|---|
+| Las 451 estaciones, en memoria | «GDL-033», «Chapultepec», códigos y nombres | Instantánea, sin red | No puede fallar |
+| Photon | Direcciones, colonias, puntos de interés | ~300 ms, con espera antifuego | La búsqueda de estaciones sigue funcionando |
+
+La degradación es parcial, no total: si Photon se cae, todavía puedes buscar cualquier estación.
+
+Dos detalles que solo aparecieron al probar el servicio contra datos reales:
+
+- **`lang=es` devuelve HTTP 400.** Photon solo acepta `de`, `en`, `fr` e `it`. Se omite el parámetro.
+- **El sesgo por `lat`/`lon` ordena pero no restringe.** Buscar «catedral» devolvía la de Buenos Aires y la de San José antes que la de Guadalajara. Hace falta el filtro duro `bbox` sobre la caja del AMG.
+
+Photon además devuelve el mismo lugar varias veces (nodo, parada, estación); los resultados se deduplican por nombre y por coordenada redondeada a ~100 m.
 
 ---
 

@@ -1,46 +1,10 @@
 import { useState } from 'react';
-import { usarTienda, type QueSeElige } from '../estado/tienda';
-
-function Campo({
-  que,
-  etiqueta,
-  valor,
-  activo,
-  onClick,
-}: {
-  que: QueSeElige;
-  etiqueta: string;
-  valor: string | null;
-  activo: boolean;
-  onClick: (que: QueSeElige) => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={() => onClick(que)}
-      className={`flex w-full items-center gap-2 rounded-lg border px-3 py-2 text-left text-sm transition ${
-        activo
-          ? 'border-emerald-500 bg-emerald-50 ring-2 ring-emerald-200'
-          : 'border-slate-300 bg-white hover:border-slate-400'
-      }`}
-    >
-      <span
-        className={`inline-block size-2.5 shrink-0 rounded-full ${
-          que === 'origen' ? 'bg-teal-700' : 'bg-red-700'
-        }`}
-        aria-hidden
-      />
-      <span className="min-w-0 flex-1 truncate">
-        {valor ?? <span className="text-slate-400">{etiqueta}</span>}
-      </span>
-    </button>
-  );
-}
+import { usarTienda } from '../estado/tienda';
+import { CampoBusqueda } from './CampoBusqueda';
 
 export function SelectorPuntos() {
   const origen = usarTienda((e) => e.origen);
   const destino = usarTienda((e) => e.destino);
-  const queSeElige = usarTienda((e) => e.queSeElige);
   const elegir = usarTienda((e) => e.elegir);
   const fijarPunto = usarTienda((e) => e.fijarPunto);
   const intercambiar = usarTienda((e) => e.intercambiar);
@@ -84,20 +48,8 @@ export function SelectorPuntos() {
     <div className="space-y-2">
       <div className="flex items-start gap-2">
         <div className="min-w-0 flex-1 space-y-1.5">
-          <Campo
-            que="origen"
-            etiqueta="¿Dónde empiezas?"
-            valor={origen?.etiqueta ?? null}
-            activo={queSeElige === 'origen'}
-            onClick={elegir}
-          />
-          <Campo
-            que="destino"
-            etiqueta="¿A dónde vas?"
-            valor={destino?.etiqueta ?? null}
-            activo={queSeElige === 'destino'}
-            onClick={elegir}
-          />
+          <CampoBusqueda que="origen" marcador="¿Dónde empiezas? Escribe o toca el mapa" />
+          <CampoBusqueda que="destino" marcador="¿A dónde vas?" />
         </div>
 
         <button
