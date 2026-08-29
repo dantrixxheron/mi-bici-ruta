@@ -10,9 +10,11 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "datos:estaciones": "tsx scripts/01-normalizar-estaciones.ts",
-    "datos:grafo": "tsx scripts/02-construir-grafo.ts",
+    "datos:grafo": "tsx --env-file-if-exists=.env scripts/02-construir-grafo.ts",
     "datos": "npm run datos:estaciones && npm run datos:grafo",
-    "probar:motor": "tsx scripts/03-probar-motor.ts"
+    "probar:motor": "tsx scripts/03-probar-motor.ts",
+    "probar:ors": "tsx --env-file-if-exists=.env scripts/05-probar-ors.ts",
+    "cobertura": "tsx scripts/04-explorar-cobertura.ts"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

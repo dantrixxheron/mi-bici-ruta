@@ -43,7 +43,23 @@ const SALIDA = resolve(RAIZ, 'data/grafo.json');
 const CACHE = resolve(RAIZ, 'data/.cache-matriz');
 
 const PERFIL = 'cycling-regular';
-const URL_MATRIZ = `https://api.openrouteservice.org/v2/matrix/${PERFIL}`;
+
+/**
+ * OpenRouteService migro a la infraestructura unificada de HeiGIT.
+ *
+ *   viejo   https://api.openrouteservice.org/v2/matrix/{perfil}
+ *   nuevo   https://api.heigit.org/openrouteservice/v2/matrix/{perfil}
+ *
+ * Fechas del anuncio oficial:
+ *   28-abr-2026  el host viejo queda deprecado
+ *   27-ago-2026  su cuota se reduce al 10% de la del plan
+ *   28-sep-2026  se apaga por completo
+ *
+ * Construir el grafo contra el host viejo hoy significa chocar con el 10%
+ * de la cuota a mitad de la matriz. Se usa el nuevo por omision.
+ */
+const BASE_ORS = process.env.ORS_BASE_URL ?? 'https://api.heigit.org/openrouteservice';
+const URL_MATRIZ = `${BASE_ORS}/v2/matrix/${PERFIL}`;
 
 /** sources x destinations por peticion. 50x50 = 2500 rutas, el tope del plan gratuito. */
 const BLOQUE = 50;
@@ -110,10 +126,13 @@ async function pedirBloque(
 }
 
 async function construirConOrs(estaciones: Estacion[]): Promise<Matriz> {
-  const llave = process.env.ORS_API_KEY;
-  if (!llave) {
+  // Una sola llave de ORS para todo el proyecto. Se acepta tambien el nombre
+  // sin prefijo por compatibilidad, pero el canonico es VITE_ORS_API_KEY
+  // porque el navegador solo puede leer variables con ese prefijo.
+  const llave = process.env.VITE_ORS_API_KEY ?? process.env.ORS_API_KEY;
+  if (!llave || llave.startsWith('pon_aqui')) {
     throw new Error(
-      'Falta ORS_API_KEY.\n' +
+      'Falta VITE_ORS_API_KEY.\n' +
         '  Consiguela gratis en https://openrouteservice.org/dev/#/signup\n' +
         '  Luego: copia .env.example a .env y pon la llave ahi.\n' +
         '  O corre con --respaldo para generar un grafo estimado sin red.',
@@ -197,6 +216,7 @@ async function main(): Promise<void> {
 
   console.log(`Estaciones     ${estaciones.length}`);
   console.log(`Modo           ${MODO_RESPALDO ? 'RESPALDO (estimacion geodesica)' : 'OpenRouteService'}`);
+  if (!MODO_RESPALDO) console.log(`Endpoint       ${URL_MATRIZ}`);
   console.log(`Ventana        ${VENTANA_EFECTIVA_MIN} min (${VENTANA_EFECTIVA_SEG} s)`);
   if (gradoMaximo) console.log(`Grado maximo   ${gradoMaximo} aristas por estacion`);
   console.log('');
