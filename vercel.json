@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/api/ors/:ruta(.*)", "destination": "/api/ors?ruta=:ruta" }
+  ]
+}

@@ -352,7 +352,7 @@ La solución es una función serverless de nueve líneas útiles:
 
 | Pieza | Papel |
 |---|---|
-| `api/ors/[...ruta].ts` | En producción. Lee `ORS_API_KEY` del entorno del servidor |
+| `api/ors.ts` | En producción. Lee `ORS_API_KEY` del entorno del servidor |
 | `server.proxy` en `vite.config.ts` | El equivalente en desarrollo, para que `npm run dev` se comporte igual |
 | `ORS_API_KEY` sin prefijo `VITE_` | El prefijo es justamente lo que la publicaba |
 

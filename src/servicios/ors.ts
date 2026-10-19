@@ -21,7 +21,7 @@ import {
 
 /**
  * La app ya no habla con ORS directamente ni conoce la llave: todo pasa
- * por /api/ors, que la agrega del lado del servidor. Ver api/ors/[...ruta].ts
+ * por /api/ors, que la agrega del lado del servidor. Ver api/ors.ts
  * y el proxy equivalente de vite.config.ts para desarrollo.
  */
 const BASE = '/api/ors';

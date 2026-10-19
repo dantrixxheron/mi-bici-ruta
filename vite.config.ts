@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
   return {
     server: {
       /**
-       * Espejo local de api/ors/[...ruta].ts. Sin esto, en desarrollo la app
+       * Espejo local de api/ors.ts. Sin esto, en desarrollo la app
        * pediria /api/ors a Vite, que no sabe nada de ORS, y todo caeria al
        * respaldo de lineas rectas solo en local.
        */

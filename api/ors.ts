@@ -36,7 +36,10 @@ export default async function handler(peticion: Request): Promise<Response> {
     return json({ error: 'ORS_API_KEY no esta configurada en el servidor.' }, 503);
   }
 
-  const ruta = new URL(peticion.url).pathname.replace(/^\/api\/ors\//, '');
+  // Vercel no soporta [...ruta] de varios segmentos fuera de Next.js, asi
+  // que vercel.json reescribe /api/ors/<ruta> a /api/ors?ruta=<ruta>.
+  const url = new URL(peticion.url);
+  const ruta = url.searchParams.get('ruta') ?? url.pathname.replace(/^\/api\/ors\/?/, '');
   if (!PERMITIDOS.has(ruta)) {
     return json({ error: `Ruta no permitida: ${ruta}` }, 403);
   }
