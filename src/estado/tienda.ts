@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { prepararContexto, planificar, type ContextoPlaneacion } from '../dominio/planificador';
-import { refinarConOrs, hayLlave } from '../servicios/ors';
+import { refinarConOrs } from '../servicios/ors';
 import type {
   ArchivoEstaciones,
   ArchivoGrafo,
@@ -67,7 +67,7 @@ export const usarTienda = create<Tienda>((set, get) => {
     refinadoEnCurso?.abort();
     refinadoEnCurso = null;
 
-    if (!resultado.ok || !hayLlave()) return;
+    if (!resultado.ok) return;
 
     const control = new AbortController();
     refinadoEnCurso = control;

@@ -1,5 +1,6 @@
 import type { Itinerario, LatLng, Tramo } from '../dominio/tipos';
 import {
+  FACTOR_CALIBRACION_BICI,
   PENALIZACION_ANCLAJE_SEG,
   SEGUNDOS_POR_MINUTO,
   VENTANA_GRATUITA_MIN,
@@ -18,11 +19,29 @@ import {
  * hacia arriba: devuelven null y el llamador se queda con lo que tenia.
  */
 
-const BASE = 'https://api.heigit.org/openrouteservice';
-const LLAVE = import.meta.env.VITE_ORS_API_KEY as string | undefined;
+/**
+ * La app ya no habla con ORS directamente ni conoce la llave: todo pasa
+ * por /api/ors, que la agrega del lado del servidor. Ver api/ors/[...ruta].ts
+ * y el proxy equivalente de vite.config.ts para desarrollo.
+ */
+const BASE = '/api/ors';
 
-export const hayLlave = (): boolean =>
-  Boolean(LLAVE && LLAVE.length > 20 && !LLAVE.startsWith('pon_aqui'));
+/**
+ * Diagnostico. Este modulo cae al respaldo en silencio por diseno, y eso
+ * vuelve indistinguibles tres causas muy distintas: no hay llave, el
+ * servidor la rechazo, o el navegador bloqueo la peticion. Sin este aviso
+ * las tres se ven igual en el mapa: una linea recta.
+ */
+let yaAvise = false;
+function avisarUnaVez(causa: string, detalle?: string): void {
+  if (yaAvise) return;
+  yaAvise = true;
+  console.warn(
+    `[MiRuta] Geometrias en modo respaldo (lineas rectas). Causa: ${causa}` +
+      (detalle ? `
+${detalle}` : ''),
+  );
+}
 
 export type Perfil = 'cycling-regular' | 'foot-walking';
 
@@ -46,15 +65,14 @@ export async function rutear(
   hasta: LatLng,
   senal?: AbortSignal,
 ): Promise<TramoRuteado | null> {
-  if (!hayLlave()) return null;
-
   try {
     const respuesta = await fetch(`${BASE}/v2/directions/${perfil}/geojson`, {
       method: 'POST',
+      // Sin Authorization: la pone el proxy. El Accept si viaja porque el
+      // endpoint /geojson responde 406 ante 'application/json' a secas.
       headers: {
-        Authorization: LLAVE!,
         'Content-Type': 'application/json',
-        Accept: 'application/json',
+        Accept: 'application/geo+json, application/json',
       },
       body: JSON.stringify({
         coordinates: [
@@ -65,7 +83,13 @@ export async function rutear(
       ...(senal ? { signal: senal } : {}),
     });
 
-    if (!respuesta.ok) return null;
+    if (!respuesta.ok) {
+      avisarUnaVez(
+        `ORS respondio HTTP ${respuesta.status}.`,
+        (await respuesta.text()).slice(0, 300),
+      );
+      return null;
+    }
 
     const datos = (await respuesta.json()) as RespuestaDirections;
     const rasgo = datos.features?.[0];
@@ -79,7 +103,12 @@ export async function rutear(
       duracionSeg: Math.round(resumen.duration),
       geometria: coordenadas.map(([lon, lat]) => ({ lat, lon })),
     };
-  } catch {
+  } catch (e) {
+    if (e instanceof DOMException && e.name === 'AbortError') return null;
+    avisarUnaVez(
+      'la peticion ni siquiera llego a completarse. Casi siempre es CORS o falta de red.',
+      e instanceof Error ? e.message : String(e),
+    );
     return null;
   }
 }
@@ -130,8 +159,6 @@ export async function refinarConOrs(
   itinerario: Itinerario,
   senal?: AbortSignal,
 ): Promise<Itinerario> {
-  if (!hayLlave()) return itinerario;
-
   const refinados = await Promise.all(
     itinerario.tramos.map(async (tramo): Promise<Tramo> => {
       const perfil: Perfil = tramo.modo === 'caminata' ? 'foot-walking' : 'cycling-regular';
@@ -149,14 +176,19 @@ export async function refinarConOrs(
         };
       }
 
+      // Misma calibracion que aplico el constructor del grafo. Sin esto el
+      // refinado sobrescribiria los tiempos calibrados con los crudos de
+      // ORS y volveria a prometer margenes que no se cumplen.
+      const duracionSeg = Math.round(real.duracionSeg * FACTOR_CALIBRACION_BICI);
+
       return {
         ...tramo,
         distanciaM: real.distanciaM,
-        duracionSeg: real.duracionSeg,
+        duracionSeg,
         geometria: real.geometria,
         geometriaAproximada: false,
         margenMin:
-          Math.round((VENTANA_GRATUITA_MIN - real.duracionSeg / SEGUNDOS_POR_MINUTO) * 10) / 10,
+          Math.round((VENTANA_GRATUITA_MIN - duracionSeg / SEGUNDOS_POR_MINUTO) * 10) / 10,
       };
     }),
   );

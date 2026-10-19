@@ -25,6 +25,7 @@ import { dirname, resolve } from 'node:path';
 import { haversineM } from '../src/servicios/geo';
 import { CACHE_MATRIZ as CACHE, ESTACIONES_JSON as ENTRADA, GRAFO_JSON as SALIDA } from './rutas';
 import {
+  FACTOR_CALIBRACION_BICI,
   FACTOR_RODEO,
   RADIO_PREFILTRO_M,
   VELOCIDAD_BICI_KMH,
@@ -123,8 +124,8 @@ async function pedirBloque(
 
 async function construirConOrs(estaciones: Estacion[]): Promise<Matriz> {
   // Una sola llave de ORS para todo el proyecto. Se acepta tambien el nombre
-  // sin prefijo por compatibilidad, pero el canonico es VITE_ORS_API_KEY
-  // porque el navegador solo puede leer variables con ese prefijo.
+  // La llave NO lleva prefijo VITE_ a proposito: con el, Vite la habria
+  // metido en el bundle publico. Solo la ven este script y el proxy.
   const llave = process.env.VITE_ORS_API_KEY ?? process.env.ORS_API_KEY;
   if (!llave || llave.startsWith('pon_aqui')) {
     throw new Error(
@@ -168,7 +169,10 @@ async function construirConOrs(estaciones: Estacion[]): Promise<Matriz> {
           const dur = matriz.duraciones[i]![j];
           const dis = matriz.distancias[i]?.[j];
           if (dur == null || dis == null) continue;
-          duraciones[bi * BLOQUE + i]![bj * BLOQUE + j] = dur;
+          // Calibrado aqui, no despues: asi el filtro de la ventana y la
+          // invariante "ninguna arista excede 27 min" operan sobre el tiempo
+          // que de verdad se le va a prometer al usuario.
+          duraciones[bi * BLOQUE + i]![bj * BLOQUE + j] = dur * FACTOR_CALIBRACION_BICI;
           distancias[bi * BLOQUE + i]![bj * BLOQUE + j] = dis;
         }
       }

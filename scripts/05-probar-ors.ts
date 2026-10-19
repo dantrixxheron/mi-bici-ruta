@@ -41,7 +41,7 @@ function leerLlave(): string {
   }
 
   console.error('No encontre una llave.');
-  console.error('  Pon VITE_ORS_API_KEY en el archivo .env y vuelve a correr esto.');
+  console.error('  Pon ORS_API_KEY en el archivo .env y vuelve a correr esto.');
   process.exit(1);
 }
 
@@ -75,7 +75,8 @@ async function intentar(url: string, cuerpo: unknown): Promise<Resultado> {
       headers: {
         Authorization: valor,
         'Content-Type': 'application/json',
-        Accept: 'application/json',
+        // /geojson responde 406 ante 'application/json' a secas.
+        Accept: 'application/geo+json, application/json',
       },
       body: JSON.stringify(cuerpo),
     });

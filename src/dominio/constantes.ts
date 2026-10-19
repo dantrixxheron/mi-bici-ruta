@@ -30,6 +30,23 @@ export const RADIO_CAMINATA_M = 1000;
  */
 export const RADIO_PREFILTRO_M = 6000;
 
+/**
+ * Calibracion de las duraciones de ORS para bicicleta compartida.
+ *
+ * Medido sobre las 139 255 aristas del grafo real: el perfil
+ * cycling-regular asume 18.0 km/h con varianza casi nula (p25 17.8,
+ * p95 18.0). Es una velocidad plana: no modela semaforos, altos, cuestas
+ * ni el tipo de bicicleta. Corresponde a una bici ligera con ciclista en
+ * forma, no a una MiBici urbana de 3 velocidades con canastilla.
+ *
+ * 18.0 / 1.38 = 13 km/h, la misma cifra que ya usaba el modo respaldo.
+ *
+ * El sesgo es deliberado y asimetrico: subestimar el tiempo le cuesta al
+ * usuario un cargo real, sobreestimarlo solo le sugiere una parada de mas.
+ * Ante la duda, lento.
+ */
+export const FACTOR_CALIBRACION_BICI = 1.38;
+
 /** Velocidades de respaldo, solo cuando OpenRouteService no responde. */
 export const VELOCIDAD_CAMINATA_KMH = 4.5;
 export const VELOCIDAD_BICI_KMH = 13;

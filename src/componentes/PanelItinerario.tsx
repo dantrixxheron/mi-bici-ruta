@@ -1,5 +1,4 @@
 import { usarTienda } from '../estado/tienda';
-import { hayLlave } from '../servicios/ors';
 import { distancia, minutos } from '../util/formato';
 import { TarjetaTramo } from './TarjetaTramo';
 
@@ -110,10 +109,17 @@ export function PanelItinerario() {
           </Aviso>
         )}
 
-        {!hayLlave() && (
+        {/*
+          Se mira el itinerario, no la configuracion. geometriaAproximada dice
+          si ORS de verdad contesto; la existencia de una llave solo decia si
+          ibamos a intentarlo. Ahora que la llave vive en el servidor, el
+          cliente no puede saberlo de otro modo, y este indicador es mas
+          honesto: refleja los datos que se estan mostrando.
+        */}
+        {!refinando && tramos.every((t) => t.geometriaAproximada) && (
           <Aviso tono="azul">
-            Tiempos estimados por distancia geodésica. Añade tu llave de OpenRouteService para
-            obtener tiempos de calle reales.
+            Tiempos estimados por distancia geodésica: no pude consultar el servicio de rutas.
+            Las líneas del mapa son aproximadas.
           </Aviso>
         )}
       </div>
